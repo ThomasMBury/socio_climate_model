@@ -1,0 +1,102 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{enumitem} % Package for lists
+\usepackage{graphicx} % Package for figures
+\usepackage{changepage} % Allows for change of margin during paragraph
+\usepackage[total={6.7in,8in}]{geometry} % Span of text over the page
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{bm}		% For bold greek letters
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{headings} % Makes all pages in the document conform to the custom headers and footers
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\vec}[1]{\bm{#1}} % Use bold vectors
+
+\DeclareMathOperator{\Tr}{Tr} % For trace and determinant text in equations
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+
+
+
+
+
+\begin{document}
+
+
+\section{Contrasting with Beckage}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{m{25em}|m{25em}}
+\textbf{Beckage} & \textbf{Us}\\
+\hline\\
+Extreme weather patterns influence human behaviour. So only current events. & Human behaviour influenced by projected temperature at time $t_f$. \\
+& \\
+Individual level psychology scaled up to population level (theory of planned behaviour) &  Social dynamics between individuals (imitation dynamics)\\
+& \\
+Uses discrete climate events and sensing/forgetting process & Not based on discrete events - just a value of temperature at some projected time\\
+& \\
+Both use dynamic feedback between climate and human perception and vice-versa & \\
+& \\
+Three different forms for response to frequency of extreme events (logistic, linear, cubic) & I think sigmoidal with threshold around the 2 degree mark is most relevant for us - can contrast this to linear. Cubic and logistic both give quite extreme results for our model (6 degrees, 1.5 degrees respectively).  \\
+& \\
+Examine cumulative and non-cumulative mitigative responses & One general mitigative response - more responses could be an interesting extension. \\
+& \\
+Entire population adopts the same response & Individuals may adopt one of two strategies \\
+& \\
+Projected temperature range for 2100 (3.4-5.9) degC - very high - note that IPCC range is (1.5-4.5) & Projected temp (1.8-4.5 degC) for near baseline values of $\kappa$ and $\delta$. This could go much higher for lower kappa, higher delta. \\
+& \\
+Impose limits on annual shifts of carbon flux and a minimum level of anthropogenic emissions & We do not (simpler model) \\
+& \\
+Demonstrate that model sensitivity to climate parameters is similar to sensitivity to social parameters (find similar temperature projection ranges) & We could do this.\\
+& \\
+Components with largest increase on temperature: social norms, perceived behavioural control (related to our cost of mitigation) , cumulative vs. non-cumulative mitigation strategies, functional form of response to temp. & Social norms (but dynamic here), functional form of temp. response, social learning rate, distance in time looking ahead. \\
+& \\
+
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ---------------------------
+% Bibliography
+%---------------------------
+
+\pagebreak
+
+\bibliographystyle{unsrt}
+\bibliography{../../bibliographies/critical_transitions.bib}
+
+
+
+\end{document}
+
+
