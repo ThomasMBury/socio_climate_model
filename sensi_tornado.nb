@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    280536,       6989]
-NotebookOptionsPosition[    272003,       6778]
-NotebookOutlinePosition[    272363,       6794]
-CellTagsIndexPosition[    272320,       6791]
+NotebookDataLength[    290723,       7223]
+NotebookOptionsPosition[    282573,       7022]
+NotebookOutlinePosition[    282932,       7038]
+CellTagsIndexPosition[    282889,       7035]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -41,20 +41,19 @@ Cell[TextData[StyleBox["Setup", "Section"]], "Section",
  CellChangeTimes->{{3.685557114188308*^9, 3.685557114876256*^9}}],
 
 Cell[BoxData[
- RowBox[{"(*", 
+ RowBox[{
   RowBox[{
-   RowBox[{
-   "SetDirectory", "[", 
-    "\"\</Users/tb460/Library/Mobile \
-Documents/com~apple~CloudDocs/Research/climate_social\>\"", "]"}], ";"}], 
-  "*)"}]], "Input",
+  "SetDirectory", "[", 
+   "\"\</Users/tb460/Library/Mobile \
+Documents/com~apple~CloudDocs/Research/climate_social\>\"", "]"}], 
+  ";"}]], "Input",
  CellChangeTimes->{{3.7239224038678007`*^9, 3.723922420638607*^9}, {
   3.726421739096759*^9, 3.726421769178512*^9}, {3.727707092645081*^9, 
   3.727707093212144*^9}, {3.7300301960170918`*^9, 3.730030214398532*^9}, {
   3.731334338723629*^9, 3.7313343395428057`*^9}, {3.731784946640905*^9, 
   3.731784947071023*^9}, {3.73298891215394*^9, 
-  3.732988913481832*^9}},ExpressionUUID->"11f251a6-4ac6-4054-a1b7-\
-4d8fe51ac25f"],
+  3.732988913481832*^9}},ExpressionUUID->"04500246-7b91-455c-af3f-\
+ff14514ec2a7"],
 
 Cell[CellGroupData[{
 
@@ -875,9 +874,10 @@ Cell[BoxData[
    3.734208678171741*^9, 3.734208778956255*^9, 3.7342090081009903`*^9, 
    3.734209040958584*^9, 3.756248120721408*^9, 3.756248216382345*^9, 
    3.756248442581893*^9, 3.756248536108244*^9, 3.756248623931258*^9, 
-   3.75624873264645*^9, 3.756312002592464*^9, 
-   3.757173071724131*^9},ExpressionUUID->"ecfda2c6-78b0-415b-b6bd-\
-7d38d7ee9c6c"]
+   3.75624873264645*^9, 3.756312002592464*^9, 3.757173071724131*^9, 
+   3.757779640222929*^9, {3.76391735737521*^9, 3.7639173698607607`*^9}, 
+   3.763988513972364*^9},ExpressionUUID->"700edbc7-5687-4522-ae78-\
+8fd7ef17517b"]
 }, Open  ]]
 }, Open  ]],
 
@@ -950,7 +950,7 @@ Cell[BoxData[
      ",", "\"\<Evasion factor\>\"", ",", 
      "\"\<Initial proportion of mitigators\>\"", ",", 
      "\"\<Social learning rate\>\"", ",", "\"\<Strength of social norms\>\"", 
-     ",", "\"\<Cost of mitigation\>\"", ",", 
+     ",", "\"\<Net cost of mitigation\>\"", ",", 
      "\"\<Maximum of warming cost function\>\"", ",", 
      "\"\<Nonlinearity of warming cost function\>\"", ",", 
      "\"\<Critical temperature of warming cost function\>\"", ",", 
@@ -982,8 +982,8 @@ vegetation\>\"", ",",
   3.73178847233554*^9}, {3.731792479903853*^9, 3.73179262597519*^9}, {
   3.731792656380056*^9, 3.731792667193076*^9}, {3.7342066011834087`*^9, 
   3.734206674101598*^9}, {3.7342067258266*^9, 3.734206801328723*^9}, {
-  3.734206906058793*^9, 
-  3.734206909221345*^9}},ExpressionUUID->"c71ead07-8aac-47ec-a533-\
+  3.734206906058793*^9, 3.734206909221345*^9}, {3.7577796358165207`*^9, 
+  3.757779636764423*^9}},ExpressionUUID->"c71ead07-8aac-47ec-a533-\
 4cc7ed920db3"],
 
 Cell[CellGroupData[{
@@ -1009,7 +1009,7 @@ rate constant\"\>"},
 proportion of mitigators\"\>"},
     {"\<\"\[Kappa]\"\>", "\<\"Social learning rate\"\>"},
     {"\<\"\[Delta]\"\>", "\<\"Strength of social norms\"\>"},
-    {"\<\"\[Beta]\"\>", "\<\"Cost of mitigation\"\>"},
+    {"\<\"\[Beta]\"\>", "\<\"Net cost of mitigation\"\>"},
     {"\<\"\\!\\(\\*SubscriptBox[\\(f\\), \\(max\\)]\\)\"\>", "\<\"Maximum of \
 warming cost function\"\>"},
     {"\<\"\[Omega]\"\>", "\<\"Nonlinearity of warming cost function\"\>"},
@@ -1075,9 +1075,10 @@ saturation constant\"\>"},
    3.7342086782842216`*^9, 3.7342087791203327`*^9, 3.734209008212708*^9, 
    3.734209041070527*^9, 3.756248120838889*^9, 3.756248216473063*^9, 
    3.756248442690686*^9, 3.756248536204775*^9, 3.75624862401538*^9, 
-   3.7562487327615967`*^9, 3.756312002678812*^9, 
-   3.757173071864382*^9},ExpressionUUID->"a067c4fe-8597-40d5-a573-\
-662b573c552e"]
+   3.7562487327615967`*^9, 3.756312002678812*^9, 3.757173071864382*^9, 
+   3.757779640349764*^9, 3.7639173699573593`*^9, 
+   3.763988514087099*^9},ExpressionUUID->"e0bf9a76-fada-47f6-9f2e-\
+bd958fbc2bbd"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1890,9 +1891,10 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"zetaVals", "=", 
      RowBox[{"{", 
-      RowBox[{"zetaL", ",", "zetaB", ",", "zetaU"}], "}"}]}], ";"}], "\n", 
+      RowBox[{"zetaL", ",", "zetaB", ",", "zetaU"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"Social", " ", "params"}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"Social", " ", "params"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"x0Vals", "=", 
      RowBox[{"{", 
@@ -1932,9 +1934,9 @@ Cell[BoxData[
     RowBox[{"deltatFutVals", "=", 
      RowBox[{"{", 
       RowBox[{"deltatFutL", ",", "deltatFutB", ",", "deltatFutU"}], "}"}]}], 
-    ";"}], "\n", 
+    ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"initial", " ", "sinks"}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"initial", " ", "sinks"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"cat0Vals", "=", 
      RowBox[{"{", 
@@ -1953,9 +1955,10 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"cso0Vals", "=", 
      RowBox[{"{", 
-      RowBox[{"cso0L", ",", "cso0B", ",", "cso0U"}], "}"}]}], ";"}], "\n", 
+      RowBox[{"cso0L", ",", "cso0B", ",", "cso0U"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"lenton", " ", "parameters"}], " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"lenton", " ", "parameters"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"kpVals", "=", 
      RowBox[{"{", 
@@ -2029,11 +2032,10 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"capVals", "=", 
      RowBox[{"{", 
-      RowBox[{"capL", ",", "capB", ",", "capU"}], "}"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+      RowBox[{"capL", ",", "capB", ",", "capU"}], "}"}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
     RowBox[{"global", " ", "energy", " ", "demand", " ", "parameter"}], " ", 
-    "*)"}], "\n", 
+    "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"sVals", "=", 
      RowBox[{"{", 
@@ -2320,10 +2322,9 @@ Cell[BoxData[
            RowBox[{"rgas", "*", 
             RowBox[{"(", 
              RowBox[{"temp", "+", "temp0"}], ")"}]}], ")"}]}], ")"}]}], 
-       "]"}]}]}], ";"}], "\n", 
+       "]"}]}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"turnover", " ", "of", " ", "plants"}], " ", "*)"}], 
-   "\[IndentingNewLine]", 
+    RowBox[{"turnover", " ", "of", " ", "plants"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"Clear", "[", "turnover", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2331,10 +2332,10 @@ Cell[BoxData[
      RowBox[{"turnover", "[", "cve_", "]"}], ":=", 
      RowBox[{"kt", "*", 
       RowBox[{"(", 
-       RowBox[{"cve", "+", "cve0"}], ")"}]}]}], ";"}], "\n", 
+       RowBox[{"cve", "+", "cve0"}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+   
    RowBox[{"(*", " ", 
-    RowBox[{"respiration", " ", "of", " ", "soil"}], " ", "*)"}], 
-   "\[IndentingNewLine]", 
+    RowBox[{"respiration", " ", "of", " ", "soil"}], " ", "*)"}], "\n", 
    RowBox[{
     RowBox[{"Clear", "[", "resps", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2350,11 +2351,11 @@ Cell[BoxData[
          RowBox[{"308.56", "/", 
           RowBox[{"(", 
            RowBox[{"temp", "+", "temp0", "-", "227.13"}], ")"}]}], ")"}]}], 
-       "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+       "]"}]}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
     RowBox[{
     "carbon", " ", "flux", " ", "to", " ", "land", " ", "from", " ", 
-     "atmosphere"}], " ", "*)"}], "\n", 
+     "atmosphere"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Clear", "[", "fla", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2368,12 +2369,13 @@ Cell[BoxData[
        RowBox[{"temp", ",", "cve"}], "]"}], "-", 
       RowBox[{"resps", "[", 
        RowBox[{"temp", ",", "cso"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", 
+   "\n", 
    RowBox[{"(*", " ", 
     RowBox[{"ATMOSPHERE", " ", "DYANMICS"}], " ", "*)"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
-    RowBox[{"opacity", " ", "of", " ", "co2"}], " ", "*)"}], "\n", 
+    RowBox[{"opacity", " ", "of", " ", "co2"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Clear", "[", "tauco2", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2381,10 +2383,10 @@ Cell[BoxData[
      RowBox[{"tauco2", "[", "ca_", "]"}], ":=", 
      RowBox[{"1.73", "*", 
       RowBox[{
-       RowBox[{"pco2a", "[", "ca", "]"}], "^", "0.263"}]}]}], ";"}], 
-   "\[IndentingNewLine]", 
+       RowBox[{"pco2a", "[", "ca", "]"}], "^", "0.263"}]}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
-    RowBox[{"opacity", " ", "of", " ", "h20"}], " ", "*)"}], "\n", 
+    RowBox[{"opacity", " ", "of", " ", "h20"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Clear", "[", "hum", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2404,9 +2406,9 @@ Cell[BoxData[
             RowBox[{"rgas", "*", 
              RowBox[{"(", 
               RowBox[{"temp", "+", "temp0"}], ")"}]}], ")"}]}], "]"}]}], 
-        ")"}], "^", "0.503"}]}]}], ";"}], "\[IndentingNewLine]", 
+        ")"}], "^", "0.503"}]}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
-    RowBox[{"total", " ", "opacity"}], " ", "*)"}], "\n", 
+    RowBox[{"total", " ", "opacity"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Clear", "[", "tau", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2416,11 +2418,10 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"tauco2", "[", "ca", "]"}], "+", 
       RowBox[{"tauh2o", "[", 
-       RowBox[{"temp", ",", "hum"}], "]"}], "+", "tauch4"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+       RowBox[{"temp", ",", "hum"}], "]"}], "+", "tauch4"}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
     RowBox[{"downward", " ", "flux", " ", "of", " ", "radiation"}], " ", 
-    "*)"}], "\n", 
+    "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Clear", "[", "fd", "]"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
@@ -2439,12 +2440,12 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"tau", "[", 
            RowBox[{"ca", ",", "temp", ",", "hum"}], "]"}], "/", "4"}]}]}], 
-       ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+       ")"}]}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Calibrate", " ", "hum", " ", "so", " ", "that", " ", "equilibirum", " ", 
      "temperature", " ", "of", " ", "288.15", "K", " ", "in", " ", "1800"}], 
-    " ", "*)"}], "\n", 
+    " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"hum", "=", 
      RowBox[{"humidity", "/.", 
@@ -2584,10 +2585,10 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"resLin", "[", "temp_", "]"}], ":=", 
      RowBox[{
-      RowBox[{"fmax", "/", "5"}], "*", "temp"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+      RowBox[{"fmax", "/", "5"}], "*", "temp"}]}], ";"}], "\n", 
    RowBox[{"(*", " ", 
-    RowBox[{"assign", " ", "response", " ", "function"}], " ", "*)"}], "\n", 
+    RowBox[{"assign", " ", "response", " ", "function"}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{"Clear", "[", "res", "]"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Which", "[", 
@@ -3033,14 +3034,15 @@ Cell[BoxData[
    ",", "\<\"\\!\\(\\*SubscriptBox[\\(P\\), \\(0\\)]\\)\"\>", 
    ",", "\<\"c\"\>", ",", "\<\"s\"\>"}], "}"}]], "Output",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQBOJ9d3OkL5x97bgqPi0GRAt9v5kCornV/i4A0XUXBK+B
+1:eJxTTMoPSmVkYGDQAeJ9d3OkL5x97bgqPi0GRAt9v5kCornV/i4A0XUXBK+B
 xU2l3oLoT9InhS4CaY1jJyVAtJT3PEcQfWnnrGgQrTyx9ihY3M3tDoi2W1z4
 AUQXrXiefQWkX/JMHYi+sGobx1UgPU3ojQSILhWKVwDRX0st/a4B6YTre5NB
 dF1YUjOIPj/RbfN1IG3g7dEkf+61Y9P/s1NBdMo35kkyF147rjk6Oyn/0mvH
 e/biFSC6977cchBtKp7FWgCk5bRviYBot4xyRRD9wUvCDkSfLvN0AtHyngbt
 lX9eOzpUKk0G0Rof09aDaJcM8d0g+ks73zEQfc5jyWUQvakhaccMIB1hIaNl
-+++1IwCJtrng
-  "],ExpressionUUID->"89b20430-cbd8-4384-896c-aa9860c4a8d0"]
++++1Y5WGQXjq/9eODf9C3KW43zjWvoxmsQXSAIHVxEE=
+  
+  "],ExpressionUUID->"7f123411-b073-4942-bb4b-2fc8d7bd8f1b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -4137,7 +4139,7 @@ proportion of mitigators\"\>",
      {"6", "\<\"\[Delta]\"\>", "\<\"Strength of social norms\"\>", 
       RowBox[{"{", 
        RowBox[{"0.5`", ",", "1", ",", "1.5`"}], "}"}]},
-     {"7", "\<\"\[Beta]\"\>", "\<\"Cost of mitigation\"\>", 
+     {"7", "\<\"\[Beta]\"\>", "\<\"Net cost of mitigation\"\>", 
       RowBox[{"{", 
        RowBox[{"0.5`", ",", "1", ",", "1.5`"}], "}"}]},
      {"8", "\<\"\\!\\(\\*SubscriptBox[\\(f\\), \\(max\\)]\\)\"\>", \
@@ -4276,9 +4278,11 @@ vapour saturation constant\"\>",
    3.734208693205697*^9, 3.7342087960671997`*^9, 3.734209056176867*^9, 
    3.756248135894991*^9, 3.756248231894506*^9, 3.75624845919552*^9, 
    3.756248550962821*^9, 3.756248638249756*^9, 3.756248747352682*^9, 
-   3.7563120164603357`*^9, 3.756312166456149*^9, 
-   3.757173085102038*^9},ExpressionUUID->"abc194c3-a1cf-450b-9e75-\
-50c39df2e293"]
+   3.7563120164603357`*^9, 3.756312166456149*^9, 3.757173085102038*^9, 
+   3.7577796554969587`*^9, 3.76391738310781*^9, 3.763918660241684*^9, {
+   3.763918732393484*^9, 3.763918742202746*^9}, 3.763918962414069*^9, 
+   3.763988526319982*^9},ExpressionUUID->"885bee20-7fcc-4224-ad94-\
+0517168b22a4"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -4459,9 +4463,11 @@ Cell[BoxData["1.045845203623426`"], "Output",
    3.734208693353572*^9, 3.734208796238174*^9, 3.7342090563763*^9, 
    3.756248137075918*^9, 3.756248232095647*^9, 3.756248459355451*^9, 
    3.756248551141458*^9, 3.756248638399631*^9, 3.75624874797046*^9, 
-   3.756312016577015*^9, 3.7563121665895243`*^9, 
-   3.7571730852079983`*^9},ExpressionUUID->"a9d55611-a622-4616-bce6-\
-0359a3126c4a"]
+   3.756312016577015*^9, 3.7563121665895243`*^9, 3.7571730852079983`*^9, 
+   3.757779655683584*^9, 3.763917383260913*^9, 3.763918660395255*^9, {
+   3.763918732581856*^9, 3.763918742354341*^9}, 3.763918962652094*^9, 
+   3.763988526485813*^9},ExpressionUUID->"d2a00b2a-82f9-4d69-a1a2-\
+ee0de924c980"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -4536,12 +4542,16 @@ Cell[BoxData[
            RowBox[{
            "\"\<Peak Temperature Anomaly (\[Degree]C)\>\"", ",", "\"\<\>\""}],
             "}"}]}], "}"}]}], ",", "\[IndentingNewLine]", 
-       RowBox[{"LabelStyle", "\[Rule]", "14"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"LabelStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"12", ",", "Black", ",", 
+          RowBox[{"FontFamily", "\[Rule]", "\"\<Arial\>\""}]}], "]"}]}], ",", 
+       "\[IndentingNewLine]", 
        RowBox[{"ImagePadding", "\[Rule]", 
         RowBox[{"{", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"50", ",", "250"}], "}"}], ",", 
+           RowBox[{"50", ",", "220"}], "}"}], ",", 
           RowBox[{"{", 
            RowBox[{"50", ",", "10"}], "}"}]}], "}"}]}], ",", 
        "\[IndentingNewLine]", 
@@ -4570,8 +4580,12 @@ Cell[BoxData[
    3.73179349489826*^9}, {3.731793995419219*^9, 3.7317940537995777`*^9}, {
    3.7317943697870007`*^9, 3.73179439871395*^9}, {3.734207793853046*^9, 
    3.734207829678149*^9}, {3.756312157496335*^9, 3.7563121627880907`*^9}, {
-   3.7563122051679068`*^9, 
-   3.756312207285787*^9}},ExpressionUUID->"821f0b64-3923-47a9-80a0-\
+   3.7563122051679068`*^9, 3.756312207285787*^9}, {3.763918167433614*^9, 
+   3.7639181676130466`*^9}, {3.7639185849930153`*^9, 3.763918621377944*^9}, {
+   3.763918656666152*^9, 3.763918657056937*^9}, {3.7639187283895493`*^9, 
+   3.763918739730699*^9}, {3.763918779422268*^9, 3.763918781619845*^9}, {
+   3.763918958524021*^9, 
+   3.7639189585504313`*^9}},ExpressionUUID->"821f0b64-3923-47a9-80a0-\
 dce3d00ce320"],
 
 Cell[BoxData[
@@ -4605,7 +4619,8 @@ Cell[BoxData[
              RowBox[{
               RowBox[{"tempAnomalyDataSort", "[", 
                RowBox[{"[", 
-                RowBox[{"i", ",", "4"}], "]"}], "]"}], ",", "12"}], "]"}], 
+                RowBox[{"i", ",", "4"}], "]"}], "]"}], ",", "10", ",", 
+              RowBox[{"FontFamily", "\[Rule]", "\"\<Arial\>\""}]}], "]"}], 
             ",", 
             RowBox[{"Scaled", "[", 
              RowBox[{"{", 
@@ -4631,7 +4646,8 @@ Cell[BoxData[
              RowBox[{
               RowBox[{"tempAnomalyDataSort", "[", 
                RowBox[{"[", 
-                RowBox[{"i", ",", "5"}], "]"}], "]"}], ",", "12"}], "]"}], 
+                RowBox[{"i", ",", "5"}], "]"}], "]"}], ",", "10", ",", 
+              RowBox[{"FontFamily", "\[Rule]", "\"\<Arial\>\""}]}], "]"}], 
             ",", 
             RowBox[{"Scaled", "[", 
              RowBox[{"{", 
@@ -4687,8 +4703,10 @@ Cell[BoxData[
    3.731793274901227*^9, 3.731793338726716*^9}, {3.731793425218793*^9, 
    3.731793467129582*^9}, {3.7317935568003683`*^9, 3.7317935787964*^9}, {
    3.7317936501370287`*^9, 3.731793707496087*^9}, {3.7317938508188257`*^9, 
-   3.73179394119645*^9}, {3.731794315698743*^9, 
-   3.731794318535286*^9}},ExpressionUUID->"0b1a3df7-bfbc-4667-9802-\
+   3.73179394119645*^9}, {3.731794315698743*^9, 3.731794318535286*^9}, {
+   3.763918118168818*^9, 3.7639181242443953`*^9}, {3.763918529001931*^9, 
+   3.763918557527831*^9}, {3.763918693491827*^9, 
+   3.7639187052611513`*^9}},ExpressionUUID->"0b1a3df7-bfbc-4667-9802-\
 7f1f141723f1"],
 
 Cell[BoxData[
@@ -4715,23 +4733,9 @@ Cell[BoxData[
    3.7307376719419203`*^9, 3.7307376926046143`*^9}, {3.7307379987695312`*^9, 
    3.730738001546815*^9}, {3.731071122623768*^9, 3.7310711392068157`*^9}, {
    3.731071892081525*^9, 3.731071899331255*^9}, {3.731073102142824*^9, 
-   3.731073104497905*^9}},ExpressionUUID->"17f37a0f-6497-4dd3-abb1-\
-7a9e0c248570"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"tornadoPlot", "=", 
-   RowBox[{"Show", "[", 
-    RowBox[{"{", 
-     RowBox[{"plot1", ",", "plot2"}], "}"}], "]"}]}], ";"}]], "Input",
- CellChangeTimes->{{3.7307342176047287`*^9, 3.7307342211481667`*^9}, {
-   3.730734622797614*^9, 3.730734635054351*^9}, {3.730735558838909*^9, 
-   3.730735576211315*^9}, {3.730735610575487*^9, 3.730735617976313*^9}, {
-   3.7307357514121847`*^9, 3.730735752017815*^9}, {3.730735790686809*^9, 
-   3.730735875936432*^9}, {3.7307359279622173`*^9, 3.730735929998357*^9}, {
-   3.731073437575694*^9, 3.7310734405488863`*^9}, 
-   3.731795367472054*^9},ExpressionUUID->"063bf224-4c85-4b6c-b626-\
-2ebc65cce454"]
+   3.731073104497905*^9}, {3.763918686435585*^9, 
+   3.763918691579466*^9}},ExpressionUUID->"17f37a0f-6497-4dd3-abb1-\
+7a9e0c248570"]
 }, Open  ]]
 }, Open  ]],
 
@@ -4740,12 +4744,28 @@ Cell[CellGroupData[{
 Cell["Output", "Section",
  CellChangeTimes->{{3.731073452306109*^9, 3.731073452722393*^9}}],
 
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"cm", "=", 
+   RowBox[{"72", "/", "2.54"}]}], ";"}]], "Input",ExpressionUUID->"02a67f50-\
+8313-4ab0-b3e0-d8688422aea5"],
+
 Cell[CellGroupData[{
 
-Cell[BoxData["tornadoPlot"], "Input",
- CellChangeTimes->{{3.731073454021739*^9, 
-  3.73107345753452*^9}},ExpressionUUID->"8858cda6-8a59-4286-824d-\
-831918873336"],
+Cell[BoxData[
+ RowBox[{"tornadoPlot", "=", 
+  RowBox[{"Show", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"plot1", ",", "plot2"}], "}"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", 
+     RowBox[{"19.05", "cm"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7639179881632032`*^9, 3.763917992105034*^9}, {
+  3.763918149447493*^9, 3.763918151731801*^9}, {3.763918211713602*^9, 
+  3.763918232916353*^9}, {3.763918311546424*^9, 3.763918333615879*^9}, {
+  3.763919917395852*^9, 
+  3.763919917514554*^9}},ExpressionUUID->"d3d3257b-6f24-4458-8a8b-\
+16e8e9c52924"],
 
 Cell[BoxData[
  GraphicsBox[{{
@@ -4769,16 +4789,21 @@ Cell[BoxData[
             RectangleBox[{0., 0.5717838830642076}, {9.65094670846156*^-12, 
              1.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 225.2500000014261}, {
-            250.06149321266986`, 268.7911764705884}}],
+           ImageSizeCache->{{184.75, 185.25000000110015`}, {187.818866192631, 
+            202.38176470588246`}}],
           StatusArea[#, 9.65094670846156*^-12]& ,
           TagBoxNote->"9.65094670846156*^-12"],
-         StyleBox[
-         "9.65094670846156`*^-12", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["9.65094670846156`*^-12", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[9.65094670846156*^-12, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[9.65094670846156*^-12, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4794,17 +4819,21 @@ Cell[BoxData[
             
             RectangleBox[{0., 1.5717838830642077`}, {0.0010583445815184334`, 
              2.4282161169357925`}, "RoundingRadius" -> 0]},
-           
-           ImageSizeCache->{{224.74999999999997`, 225.40639163268966`}, {
-            228.77588235294135`, 247.50556561085992`}}],
+           ImageSizeCache->{{184.75, 185.37064497378918`}, {
+            171.39853781512616`, 185.9614363283776}}],
           StatusArea[#, 0.0010583445815184334`]& ,
           TagBoxNote->"0.0010583445815184334"],
-         StyleBox[
-         "0.0010583445815184334`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.0010583445815184334`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.0010583445815184334`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.0010583445815184334`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4821,16 +4850,22 @@ Cell[BoxData[
             RectangleBox[{0., 2.5717838830642075`}, {-0.002992347593097744, 
              3.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.30782064383203`, 225.24999999999997`}, {
-            207.49027149321284`, 226.2199547511314}}],
+           ImageSizeCache->{{184.40889021095617`, 185.25}, {154.9782094376213,
+             169.54110795087274`}}],
           StatusArea[#, -0.002992347593097744]& ,
           TagBoxNote->"-0.002992347593097744"],
          StyleBox[
           RowBox[{"-", "0.002992347593097744`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.002992347593097744, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.002992347593097744, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4847,16 +4882,22 @@ Cell[BoxData[
             RectangleBox[{0., 3.5717838830642075`}, {-0.003312710935897911, 
              4.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.26048053635725`, 225.24999999999997`}, {
-            186.20466063348434`, 204.9343438914029}}],
+           ImageSizeCache->{{184.3723706994756, 185.25}, {138.55788106011644`,
+             153.1207795733679}}],
           StatusArea[#, -0.003312710935897911]& ,
           TagBoxNote->"-0.003312710935897911"],
          StyleBox[
           RowBox[{"-", "0.003312710935897911`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.003312710935897911, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.003312710935897911, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4873,16 +4914,21 @@ Cell[BoxData[
             RectangleBox[{0., 4.5717838830642075`}, {0.005049072614830674, 
              5.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 225.99610171733414`}, {
-            164.91904977375583`, 183.6487330316744}}],
+           ImageSizeCache->{{184.75, 185.82556418194352`}, {122.1375526826116,
+             136.70045119586305`}}],
           StatusArea[#, 0.005049072614830674]& ,
           TagBoxNote->"0.005049072614830674"],
-         StyleBox[
-         "0.005049072614830674`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.005049072614830674`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.005049072614830674, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.005049072614830674, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4899,16 +4945,22 @@ Cell[BoxData[
             RectangleBox[{0., 5.5717838830642075`}, {-0.0028284429266558497`, 
              6.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.3320408447363, 225.24999999999997`}, {
-            143.63343891402732`, 162.3631221719459}}],
+           ImageSizeCache->{{184.42757436593945`, 185.25}, {
+            105.71722430510674`, 120.28012281835821`}}],
           StatusArea[#, -0.0028284429266558497`]& ,
           TagBoxNote->"-0.0028284429266558497"],
          StyleBox[
           RowBox[{"-", "0.0028284429266558497`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.0028284429266558497`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.0028284429266558497`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4925,16 +4977,22 @@ Cell[BoxData[
             RectangleBox[{0., 6.5717838830642075`}, {-0.012649352797929225`, 
              7.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{222.88080449309055`, 225.24999999999997`}, {
-            122.34782805429882`, 141.07751131221738`}}],
+           ImageSizeCache->{{183.30804918038416`, 185.25}, {89.2968959276019, 
+            103.85979444085335`}}],
           StatusArea[#, -0.012649352797929225`]& ,
           TagBoxNote->"-0.012649352797929225"],
          StyleBox[
           RowBox[{"-", "0.012649352797929225`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.012649352797929225`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.012649352797929225`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4951,16 +5009,21 @@ Cell[BoxData[
             RectangleBox[{0., 7.5717838830642075`}, {0.01529344557934964, 
              8.428216116935792}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 227.50991323182663`}, {
-            101.06221719457034`, 119.79190045248887`}}],
+           ImageSizeCache->{{184.75, 186.99336163598056`}, {72.87656755009706,
+             87.4394660633485}}],
           StatusArea[#, 0.01529344557934964]& ,
           TagBoxNote->"0.01529344557934964"],
-         StyleBox[
-         "0.01529344557934964`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.01529344557934964`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.01529344557934964, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.01529344557934964, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -4977,16 +5040,21 @@ Cell[BoxData[
             RectangleBox[{0., 8.571783883064207}, {0.016560606088844576`, 
              9.428216116935792}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 227.69716160482392`}, {
-            79.77660633484183, 98.50628959276037}}],
+           ImageSizeCache->{{184.75, 187.1378103808642}, {56.456239172592205`,
+             71.01913768584367}}],
           StatusArea[#, 0.016560606088844576`]& ,
           TagBoxNote->"0.016560606088844576"],
-         StyleBox[
-         "0.016560606088844576`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.016560606088844576`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.016560606088844576`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.016560606088844576`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5002,17 +5070,21 @@ Cell[BoxData[
             
             RectangleBox[{0., 9.571783883064207}, {0.001923180220385845, 
              10.428216116935792`}, "RoundingRadius" -> 0]},
-           
-           ImageSizeCache->{{224.74999999999997`, 225.53418843907258`}, {
-            58.49099547511332, 77.22067873303186}}],
+           ImageSizeCache->{{184.75, 185.4692310815703}, {40.03591079508735, 
+            54.598809308338815`}}],
           StatusArea[#, 0.001923180220385845]& ,
           TagBoxNote->"0.001923180220385845"],
-         StyleBox[
-         "0.001923180220385845`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.001923180220385845`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.001923180220385845, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.001923180220385845, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5029,16 +5101,22 @@ Cell[BoxData[
             RectangleBox[{0., 10.571783883064207`}, {-0.027231151798969844`, 
              11.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{220.72605131236946`, 225.24999999999997`}, {
-            37.205384615384816`, 55.93506787330335}}],
+           ImageSizeCache->{{181.64581101239932`, 185.25}, {
+            23.615582417582488`, 38.178480930833956`}}],
           StatusArea[#, -0.027231151798969844`]& ,
           TagBoxNote->"-0.027231151798969844"],
          StyleBox[
           RowBox[{"-", "0.027231151798969844`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.027231151798969844`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.027231151798969844`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5055,16 +5133,22 @@ Cell[BoxData[
             RectangleBox[{0., 11.571783883064207`}, {-0.020397069204973306`, 
              12.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{221.73592404519715`, 225.24999999999997`}, {
-            15.919773755656308`, 34.649457013574846`}}],
+           ImageSizeCache->{{182.42485569200923`, 185.25}, {7.195254040077657,
+             21.758152553329097`}}],
           StatusArea[#, -0.020397069204973306`]& ,
           TagBoxNote->"-0.020397069204973306"],
          StyleBox[
           RowBox[{"-", "0.020397069204973306`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.020397069204973306`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.020397069204973306`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5081,17 +5165,21 @@ Cell[BoxData[
             RectangleBox[{0., 12.571783883064207`}, {0.034557468276327885`, 
              13.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            230.35655884646135`}, {-5.365837104072227, 13.363846153846339`}}],
-          
+           ImageSizeCache->{{184.75, 
+            189.18934539584163`}, {-9.225074337427202, 5.337824175824267}}],
           StatusArea[#, 0.034557468276327885`]& ,
           TagBoxNote->"0.034557468276327885"],
-         StyleBox[
-         "0.034557468276327885`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.034557468276327885`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.034557468276327885`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.034557468276327885`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5108,17 +5196,22 @@ Cell[BoxData[
             RectangleBox[{0., 13.571783883064207`}, {-0.03974848575218681, 
              14.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{218.87636423686408`, 
-            225.24999999999997`}, {-26.651447963800706`, -7.92176470588214}}],
-          
+           ImageSizeCache->{{180.2189095541523, 
+            185.25}, {-25.64540271493206, -11.082504201680592`}}],
           StatusArea[#, -0.03974848575218681]& ,
           TagBoxNote->"-0.03974848575218681"],
          StyleBox[
           RowBox[{"-", "0.03974848575218681`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.03974848575218681, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.03974848575218681, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5135,16 +5228,21 @@ Cell[BoxData[
             RectangleBox[{0., 14.571783883064207`}, {0.05855005265304536, 
              15.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            233.90194426123506`}, {-47.93705882352924, -29.207375565610675`}}],
+           ImageSizeCache->{{184.75, 
+            191.9243570015242}, {-42.06573109243692, -27.50283257918545}}],
           StatusArea[#, 0.05855005265304536]& ,
           TagBoxNote->"0.05855005265304536"],
-         StyleBox[
-         "0.05855005265304536`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.05855005265304536`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.05855005265304536, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.05855005265304536, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5161,16 +5259,21 @@ Cell[BoxData[
             RectangleBox[{0., 15.571783883064207`}, {0.07300570178155086, 
              16.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            236.03805626886952`}, {-69.22266968325766, -50.492986425339154`}}],
+           ImageSizeCache->{{184.75, 
+            193.5722148359851}, {-58.48605946994175, -43.92316095669031}}],
           StatusArea[#, 0.07300570178155086]& ,
           TagBoxNote->"0.07300570178155086"],
-         StyleBox[
-         "0.07300570178155086`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.07300570178155086`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.07300570178155086, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.07300570178155086, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5187,16 +5290,22 @@ Cell[BoxData[
             RectangleBox[{0., 16.571783883064207`}, {-0.04746635226199336, 
              17.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{217.73589470980505`, 
-            225.24999999999997`}, {-90.5082805429862, -71.77859728506769}}],
+           ImageSizeCache->{{179.33911877613534`, 
+            185.25}, {-74.90638784744661, -60.34348933419514}}],
           StatusArea[#, -0.04746635226199336]& ,
           TagBoxNote->"-0.04746635226199336"],
          StyleBox[
           RowBox[{"-", "0.04746635226199336`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.04746635226199336, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.04746635226199336, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5213,16 +5322,21 @@ Cell[BoxData[
             RectangleBox[{0., 17.571783883064207`}, {0.12319064160771998`, 
              18.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            243.4538873818219}, {-111.79389140271468`, -93.06420814479617}}],
+           ImageSizeCache->{{184.75, 
+            199.2929988374055}, {-91.32671622495141, -76.7638177117}}],
           StatusArea[#, 0.12319064160771998`]& ,
           TagBoxNote->"0.12319064160771998"],
-         StyleBox[
-         "0.12319064160771998`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.12319064160771998`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.12319064160771998`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.12319064160771998`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5239,16 +5353,22 @@ Cell[BoxData[
             RectangleBox[{0., 18.571783883064207`}, {-0.12873052711286848`, 
              19.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{205.72748345505508`, 
-            225.24999999999997`}, {-133.0795022624432, -114.3498190045247}}],
+           ImageSizeCache->{{170.0754872367568, 
+            185.25}, {-107.74704460245627`, -93.18414608920486}}],
           StatusArea[#, -0.12873052711286848`]& ,
           TagBoxNote->"-0.12873052711286848"],
          StyleBox[
           RowBox[{"-", "0.12873052711286848`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.12873052711286848`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.12873052711286848`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5265,16 +5385,22 @@ Cell[BoxData[
             RectangleBox[{0., 19.571783883064207`}, {-0.05158929555928404, 
              20.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{217.1266471688716, 
-            225.24999999999997`}, {-154.3651131221717, -135.63542986425318`}}],
+           ImageSizeCache->{{178.8691278159867, 
+            185.25}, {-124.16737297996113`, -109.60447446670972`}}],
           StatusArea[#, -0.05158929555928404]& ,
           TagBoxNote->"-0.05158929555928404"],
          StyleBox[
           RowBox[{"-", "0.05158929555928404`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.05158929555928404, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.05158929555928404, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5291,16 +5417,21 @@ Cell[BoxData[
             RectangleBox[{0., 20.571783883064207`}, {0.1587236689058602, 
              21.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            248.7046046346007}, {-175.65072398190023`, -156.92104072398172`}}],
+           ImageSizeCache->{{184.75, 
+            203.343552146692}, {-140.587701357466, -126.02480284421458`}}],
           StatusArea[#, 0.1587236689058602]& ,
           TagBoxNote->"0.1587236689058602"],
-         StyleBox[
-         "0.1587236689058602`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.1587236689058602`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.1587236689058602, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.1587236689058602, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5317,16 +5448,22 @@ Cell[BoxData[
             RectangleBox[{0., 21.571783883064207`}, {0.18904199211166706`, 
              22.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            253.18474479818275`}, {-196.9363348416287, -178.2066515837102}}],
+           ImageSizeCache->{{184.75, 
+            206.79966027288384`}, {-157.00802973497085`, \
+-142.44513122171944`}}],
           StatusArea[#, 0.18904199211166706`]& ,
           TagBoxNote->"0.18904199211166706"],
-         StyleBox[
-         "0.18904199211166706`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.18904199211166706`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.18904199211166706`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.18904199211166706`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5343,17 +5480,21 @@ Cell[BoxData[
             RectangleBox[{0., 22.571783883064207`}, {0.19687806644743633`, 
              23.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            254.34268190170206`}, {-218.22194570135724`, \
--199.49226244343873`}}],
+           ImageSizeCache->{{184.75, 
+            207.69292603845588`}, {-173.4283581124757, -158.86545959922424`}}],
           StatusArea[#, 0.19687806644743633`]& ,
           TagBoxNote->"0.19687806644743633"],
-         StyleBox[
-         "0.19687806644743633`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.19687806644743633`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.19687806644743633`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.19687806644743633`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5370,16 +5511,22 @@ Cell[BoxData[
             RectangleBox[{0., 23.571783883064207`}, {-0.16727366122160214`, 
              24.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{200.03196256563487`, 
-            225.24999999999997`}, {-239.50755656108572`, -220.7778733031672}}],
+           ImageSizeCache->{{165.68179969348978`, 
+            185.25}, {-189.84868648998057`, -175.2857879767291}}],
           StatusArea[#, -0.16727366122160214`]& ,
           TagBoxNote->"-0.16727366122160214"],
          StyleBox[
           RowBox[{"-", "0.16727366122160214`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.16727366122160214`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.16727366122160214`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5396,17 +5543,22 @@ Cell[BoxData[
             RectangleBox[{0., 24.571783883064207`}, {-0.2152132353204288, 
              25.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{192.94792926052008`, 
-            225.24999999999997`}, {-260.79316742081426`, \
--242.06348416289575`}}],
+           ImageSizeCache->{{160.21697400097267`, 
+            185.25}, {-206.26901486748542`, -191.70611635423396`}}],
           StatusArea[#, -0.2152132353204288]& ,
           TagBoxNote->"-0.2152132353204288"],
          StyleBox[
           RowBox[{"-", "0.2152132353204288`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.2152132353204288, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.2152132353204288, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5423,16 +5575,21 @@ Cell[BoxData[
             RectangleBox[{0., 25.571783883064207`}, {0.378649944942953, 
              26.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            281.2031216407158}, {-282.0787782805428, -263.3490950226243}}],
+           ImageSizeCache->{{184.75, 
+            228.4138366942665}, {-222.68934324499023`, -208.12644473173881`}}],
           StatusArea[#, 0.378649944942953]& ,
           TagBoxNote->"0.378649944942953"],
-         StyleBox[
-         "0.378649944942953`", {FontSize -> 14, FontSize -> 14}, StripOnInput -> 
-          False]],
+         StyleBox["0.378649944942953`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.378649944942953, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.378649944942953, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5449,16 +5606,22 @@ Cell[BoxData[
             RectangleBox[{0., 26.571783883064207`}, {0.6489409042146979, 
              27.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            321.1440304524052}, {-303.3643891402712, -284.6347058823527}}],
+           ImageSizeCache->{{184.75, 
+            259.22539492042694`}, {-239.10967162249509`, \
+-224.54677310924367`}}],
           StatusArea[#, 0.6489409042146979]& ,
           TagBoxNote->"0.6489409042146979"],
-         StyleBox[
-         "0.6489409042146979`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.6489409042146979`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.6489409042146979, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.6489409042146979, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.368417, 0.506779, 0.709798], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5475,15 +5638,22 @@ Cell[BoxData[
             RectangleBox[{0., 27.571783883064207`}, {1.045845203623426, 
              28.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            379.7945989818302}, {-324.64999999999975`, -305.92031674208124`}}],
+           ImageSizeCache->{{184.75, 
+            304.47011921455476`}, {-255.52999999999994`, \
+-240.96710148674853`}}],
           StatusArea[#, 1.045845203623426]& ,
           TagBoxNote->"1.045845203623426"],
-         StyleBox[
-         "1.045845203623426`", {FontSize -> 14, FontSize -> 14}, StripOnInput -> 
-          False]],
+         StyleBox["1.045845203623426`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[1.045845203623426, {FontSize -> 14, FontSize -> 14}], 
+         Style[1.045845203623426, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], 
          "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, {}}, {
     {Opacity[0], 
      PointBox[{{0., 0.014655238386775848`}, {0., 28.42821611693579}}]}, {{}, 
@@ -5505,14 +5675,21 @@ Cell[BoxData[
             RectangleBox[{0., 0.5717838830642076}, {0., 1.4282161169357925`}, 
              "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 225.24999999999997`}, {
-            250.06149321266986`, 268.7911764705884}}],
+           ImageSizeCache->{{184.75, 185.25}, {187.818866192631, 
+            202.38176470588246`}}],
           StatusArea[#, 0.]& ,
           TagBoxNote->"0."],
-         StyleBox[
-         "0.`", {FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+         StyleBox["0.`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0., {FontSize -> 14, FontSize -> 14}], "Tooltip"]& ]}, 
+         Style[0., {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5529,16 +5706,22 @@ Cell[BoxData[
             RectangleBox[{0., 1.5717838830642077`}, {-0.0009304904227414035, 
              2.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.6125013828616, 225.24999999999997`}, {
-            228.77588235294135`, 247.50556561085992`}}],
+           ImageSizeCache->{{184.64392963820757`, 185.25}, {
+            171.39853781512616`, 185.9614363283776}}],
           StatusArea[#, -0.0009304904227414035]& ,
           TagBoxNote->"-0.0009304904227414035"],
          StyleBox[
           RowBox[{"-", "0.0009304904227414035`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.0009304904227414035, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.0009304904227414035, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5551,20 +5734,24 @@ Cell[BoxData[
                GrayLevel[0.5], 
                AbsoluteThickness[1.5], 
                Opacity[0.66]}], {}, {}], 
-            
             RectangleBox[{0., 2.5717838830642075`}, {0.0029497370543678514`, 
              3.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 225.68588279469057`}, {
-            207.49027149321284`, 226.2199547511314}}],
+           ImageSizeCache->{{184.75, 185.58625244161846`}, {154.9782094376213,
+             169.54110795087274`}}],
           StatusArea[#, 0.0029497370543678514`]& ,
           TagBoxNote->"0.0029497370543678514"],
-         StyleBox[
-         "0.0029497370543678514`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.0029497370543678514`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.0029497370543678514`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.0029497370543678514`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5581,16 +5768,21 @@ Cell[BoxData[
             RectangleBox[{0., 3.5717838830642075`}, {0.0033298417626754784`, 
              4.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 225.74205088678772`}, {
-            186.20466063348434`, 204.9343438914029}}],
+           ImageSizeCache->{{184.75, 185.62958211266485`}, {
+            138.55788106011644`, 153.1207795733679}}],
           StatusArea[#, 0.0033298417626754784`]& ,
           TagBoxNote->"0.0033298417626754784"],
-         StyleBox[
-         "0.0033298417626754784`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.0033298417626754784`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.0033298417626754784`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.0033298417626754784`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5607,16 +5799,22 @@ Cell[BoxData[
             RectangleBox[{0., 4.5717838830642075`}, {-0.0049953956411794564`, 
              5.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.01183013179485`, 225.24999999999997`}, {
-            164.91904977375583`, 183.6487330316744}}],
+           ImageSizeCache->{{184.1805546730989, 185.25}, {122.1375526826116, 
+            136.70045119586305`}}],
           StatusArea[#, -0.0049953956411794564`]& ,
           TagBoxNote->"-0.0049953956411794564"],
          StyleBox[
           RowBox[{"-", "0.0049953956411794564`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.0049953956411794564`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.0049953956411794564`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5633,16 +5831,21 @@ Cell[BoxData[
             RectangleBox[{0., 5.5717838830642075`}, {0.00629771849522287, 
              6.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 226.18061418264637`}, {
-            143.63343891402732`, 162.3631221719459}}],
+           ImageSizeCache->{{184.75, 185.96790236947007`}, {
+            105.71722430510674`, 120.28012281835821`}}],
           StatusArea[#, 0.00629771849522287]& ,
           TagBoxNote->"0.00629771849522287"],
-         StyleBox[
-         "0.00629771849522287`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.00629771849522287`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.00629771849522287, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.00629771849522287, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5659,16 +5862,21 @@ Cell[BoxData[
             RectangleBox[{0., 6.5717838830642075`}, {0.012812138121003347`, 
              7.4282161169357925`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 227.1432503023872}, {
-            122.34782805429882`, 141.07751131221738`}}],
+           ImageSizeCache->{{184.75, 186.71050737612728`}, {89.2968959276019, 
+            103.85979444085335`}}],
           StatusArea[#, 0.012812138121003347`]& ,
           TagBoxNote->"0.012812138121003347"],
-         StyleBox[
-         "0.012812138121003347`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.012812138121003347`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.012812138121003347`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.012812138121003347`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5685,16 +5893,22 @@ Cell[BoxData[
             RectangleBox[{0., 7.5717838830642075`}, {-0.013610200160147023`, 
              8.428216116935792}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{222.73882002946036`, 225.24999999999997`}, {
-            101.06221719457034`, 119.79190045248887`}}],
+           ImageSizeCache->{{183.19851830844087`, 185.25}, {72.87656755009706,
+             87.4394660633485}}],
           StatusArea[#, -0.013610200160147023`]& ,
           TagBoxNote->"-0.013610200160147023"],
          StyleBox[
           RowBox[{"-", "0.013610200160147023`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.013610200160147023`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.013610200160147023`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5711,16 +5925,22 @@ Cell[BoxData[
             RectangleBox[{0., 8.571783883064207}, {-0.013361334698290595`, 
              9.428216116935792}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{222.77559489142826`, 225.24999999999997`}, {
-            79.77660633484183, 98.50628959276037}}],
+           ImageSizeCache->{{183.22688748767322`, 185.25}, {
+            56.456239172592205`, 71.01913768584367}}],
           StatusArea[#, -0.013361334698290595`]& ,
           TagBoxNote->"-0.013361334698290595"],
          StyleBox[
           RowBox[{"-", "0.013361334698290595`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.013361334698290595`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.013361334698290595`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5737,16 +5957,21 @@ Cell[BoxData[
             RectangleBox[{0., 9.571783883064207}, {0.023026822071569253`, 
              10.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 228.65267466977642`}, {
-            58.49099547511332, 77.22067873303186}}],
+           ImageSizeCache->{{184.75, 187.87492045954184`}, {40.03591079508735,
+             54.598809308338815`}}],
           StatusArea[#, 0.023026822071569253`]& ,
           TagBoxNote->"0.023026822071569253"],
-         StyleBox[
-         "0.023026822071569253`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.023026822071569253`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.023026822071569253`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.023026822071569253`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5759,20 +5984,24 @@ Cell[BoxData[
                GrayLevel[0.5], 
                AbsoluteThickness[1.5], 
                Opacity[0.66]}], {}, {}], 
-            
             RectangleBox[{0., 10.571783883064207`}, {0.017494261541991296`, 
              11.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 227.83512791866642`}, {
-            37.205384615384816`, 55.93506787330335}}],
+           ImageSizeCache->{{184.75, 187.24424153725695`}, {
+            23.615582417582488`, 38.178480930833956`}}],
           StatusArea[#, 0.017494261541991296`]& ,
           TagBoxNote->"0.017494261541991296"],
-         StyleBox[
-         "0.017494261541991296`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.017494261541991296`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.017494261541991296`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.017494261541991296`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5789,16 +6018,21 @@ Cell[BoxData[
             RectangleBox[{0., 11.571783883064207`}, {0.028515134874316228`, 
              12.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 229.46368293204006`}, {
-            15.919773755656308`, 34.649457013574846`}}],
+           ImageSizeCache->{{184.75, 188.50055540471664`}, {7.195254040077657,
+             21.758152553329097`}}],
           StatusArea[#, 0.028515134874316228`]& ,
           TagBoxNote->"0.028515134874316228"],
-         StyleBox[
-         "0.028515134874316228`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.028515134874316228`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.028515134874316228`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.028515134874316228`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5815,17 +6049,22 @@ Cell[BoxData[
             RectangleBox[{0., 12.571783883064207`}, {-0.027234987148100576`, 
              13.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{220.72548456263317`, 
-            225.24999999999997`}, {-5.365837104072227, 13.363846153846339`}}],
-          
+           ImageSizeCache->{{181.64537380545988`, 
+            185.25}, {-9.225074337427202, 5.337824175824267}}],
           StatusArea[#, -0.027234987148100576`]& ,
           TagBoxNote->"-0.027234987148100576"],
          StyleBox[
           RowBox[{"-", "0.027234987148100576`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.027234987148100576`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.027234987148100576`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5842,17 +6081,21 @@ Cell[BoxData[
             RectangleBox[{0., 13.571783883064207`}, {0.03743238285145711, 
              14.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            230.78138511958576`}, {-26.651447963800706`, -7.92176470588214}}],
-          
+           ImageSizeCache->{{184.75, 
+            189.51706852082333`}, {-25.64540271493206, -11.082504201680592`}}],
           StatusArea[#, 0.03743238285145711]& ,
           TagBoxNote->"0.03743238285145711"],
-         StyleBox[
-         "0.03743238285145711`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.03743238285145711`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.03743238285145711, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.03743238285145711, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5869,16 +6112,22 @@ Cell[BoxData[
             RectangleBox[{0., 14.571783883064207`}, {-0.03955072115526992, 
              15.428216116935792`}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{218.90558792141837`, 
-            225.24999999999997`}, {-47.93705882352924, -29.207375565610675`}}],
+           ImageSizeCache->{{180.2414535393799, 
+            185.25}, {-42.06573109243692, -27.50283257918545}}],
           StatusArea[#, -0.03955072115526992]& ,
           TagBoxNote->"-0.03955072115526992"],
          StyleBox[
           RowBox[{"-", "0.03955072115526992`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.03955072115526992, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.03955072115526992, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5895,16 +6144,22 @@ Cell[BoxData[
             RectangleBox[{0., 15.571783883064207`}, {-0.04853283089195992, 
              16.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{217.57830110836207`, 
-            225.24999999999997`}, {-69.22266968325766, -50.492986425339154`}}],
+           ImageSizeCache->{{179.2175465693079, 
+            185.25}, {-58.48605946994175, -43.92316095669031}}],
           StatusArea[#, -0.04853283089195992]& ,
           TagBoxNote->"-0.04853283089195992"],
          StyleBox[
           RowBox[{"-", "0.04853283089195992`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.04853283089195992, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.04853283089195992, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5921,16 +6176,21 @@ Cell[BoxData[
             RectangleBox[{0., 16.571783883064207`}, {0.12041853346096243`, 
              17.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            243.0442528198517}, {-90.5082805429862, -71.77859728506769}}],
+           ImageSizeCache->{{184.75, 
+            198.97699503245704`}, {-74.90638784744661, -60.34348933419514}}],
           StatusArea[#, 0.12041853346096243`]& ,
           TagBoxNote->"0.12041853346096243"],
-         StyleBox[
-         "0.12041853346096243`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.12041853346096243`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.12041853346096243`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.12041853346096243`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5947,16 +6207,22 @@ Cell[BoxData[
             RectangleBox[{0., 17.571783883064207`}, {-0.03186596679951226, 
              18.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{220.0411644637879, 
-            225.24999999999997`}, {-111.79389140271468`, -93.06420814479617}}],
+           ImageSizeCache->{{181.11746972920784`, 
+            185.25}, {-91.32671622495141, -76.7638177117}}],
           StatusArea[#, -0.03186596679951226]& ,
           TagBoxNote->"-0.03186596679951226"],
          StyleBox[
           RowBox[{"-", "0.03186596679951226`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.03186596679951226, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.03186596679951226, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5969,20 +6235,24 @@ Cell[BoxData[
                GrayLevel[0.5], 
                AbsoluteThickness[1.5], 
                Opacity[0.66]}], {}, {}], 
-            
             RectangleBox[{0., 18.571783883064207`}, {0.13426426890772358`, 
              19.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            245.09023785168503`}, {-133.0795022624432, -114.3498190045247}}],
+           ImageSizeCache->{{184.75, 
+            200.55532634272848`}, {-107.74704460245627`, -93.18414608920486}}],
           StatusArea[#, 0.13426426890772358`]& ,
           TagBoxNote->"0.13426426890772358"],
-         StyleBox[
-         "0.13426426890772358`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.13426426890772358`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.13426426890772358`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.13426426890772358`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -5999,16 +6269,22 @@ Cell[BoxData[
             RectangleBox[{0., 19.571783883064207`}, {0.1499027241744506, 
              20.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            247.40113318257937`}, {-154.3651131221717, -135.63542986425318`}}],
+           ImageSizeCache->{{184.75, 
+            202.33801702656126`}, {-124.16737297996113`, \
+-109.60447446670972`}}],
           StatusArea[#, 0.1499027241744506]& ,
           TagBoxNote->"0.1499027241744506"],
-         StyleBox[
-         "0.1499027241744506`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.1499027241744506`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.1499027241744506, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.1499027241744506, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6025,17 +6301,22 @@ Cell[BoxData[
             RectangleBox[{0., 20.571783883064207`}, {-0.04596482423911885, 
              21.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{217.95777558218575`, 
-            225.24999999999997`}, {-175.65072398190023`, \
--156.92104072398172`}}],
+           ImageSizeCache->{{179.5102840205433, 
+            185.25}, {-140.587701357466, -126.02480284421458`}}],
           StatusArea[#, -0.04596482423911885]& ,
           TagBoxNote->"-0.04596482423911885"],
          StyleBox[
           RowBox[{"-", "0.04596482423911885`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.04596482423911885, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.04596482423911885, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6052,16 +6333,22 @@ Cell[BoxData[
             RectangleBox[{0., 21.571783883064207`}, {0.09340236960074044, 
              22.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            239.05207291087467`}, {-196.9363348416287, -178.2066515837102}}],
+           ImageSizeCache->{{184.75, 
+            195.89731338838905`}, {-157.00802973497085`, \
+-142.44513122171944`}}],
           StatusArea[#, 0.09340236960074044]& ,
           TagBoxNote->"0.09340236960074044"],
-         StyleBox[
-         "0.09340236960074044`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.09340236960074044`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.09340236960074044, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.09340236960074044, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6078,17 +6365,22 @@ Cell[BoxData[
             RectangleBox[{0., 22.571783883064207`}, {-0.02543969930574619, 
              23.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{220.99077433849325`, 
-            225.24999999999997`}, {-218.22194570135724`, \
--199.49226244343873`}}],
+           ImageSizeCache->{{181.85002591826625`, 
+            185.25}, {-173.4283581124757, -158.86545959922424`}}],
           StatusArea[#, -0.02543969930574619]& ,
           TagBoxNote->"-0.02543969930574619"],
          StyleBox[
           RowBox[{"-", "0.02543969930574619`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.02543969930574619, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.02543969930574619, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6105,16 +6397,21 @@ Cell[BoxData[
             RectangleBox[{0., 23.571783883064207`}, {0.2284264379901546, 
              24.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            259.0045863706494}, {-239.50755656108572`, -220.7778733031672}}],
+           ImageSizeCache->{{184.75, 
+            211.2892523430724}, {-189.84868648998057`, -175.2857879767291}}],
           StatusArea[#, 0.2284264379901546]& ,
           TagBoxNote->"0.2284264379901546"],
-         StyleBox[
-         "0.2284264379901546`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.2284264379901546`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.2284264379901546, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.2284264379901546, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6131,16 +6428,21 @@ Cell[BoxData[
             RectangleBox[{0., 24.571783883064207`}, {0.28004362570105545`, 
              25.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{224.74999999999997`, 
-            266.6320608264421}, {-260.79316742081426`, -242.06348416289575`}}],
+           ImageSizeCache->{{184.75, 
+            217.1733040661125}, {-206.26901486748542`, -191.70611635423396`}}],
           StatusArea[#, 0.28004362570105545`]& ,
           TagBoxNote->"0.28004362570105545"],
-         StyleBox[
-         "0.28004362570105545`", {FontSize -> 14, FontSize -> 14}, 
-          StripOnInput -> False]],
+         StyleBox["0.28004362570105545`", {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[0.28004362570105545`, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[0.28004362570105545`, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6157,16 +6459,22 @@ Cell[BoxData[
             RectangleBox[{0., 25.571783883064207`}, {-0.2171217020252847, 
              26.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{192.6659150383864, 
-            225.24999999999997`}, {-282.0787782805428, -263.3490950226243}}],
+           ImageSizeCache->{{159.9994201724695, 
+            185.25}, {-222.68934324499023`, -208.12644473173881`}}],
           StatusArea[#, -0.2171217020252847]& ,
           TagBoxNote->"-0.2171217020252847"],
          StyleBox[
           RowBox[{"-", "0.2171217020252847`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.2171217020252847, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.2171217020252847, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6182,17 +6490,22 @@ Cell[BoxData[
             
             RectangleBox[{0., 26.571783883064207`}, {-0.4268594402714525, 
              27.42821611693579}, "RoundingRadius" -> 0]},
-           
-           ImageSizeCache->{{161.67295878031933`, 
-            225.24999999999997`}, {-303.3643891402712, -284.6347058823527}}],
+           ImageSizeCache->{{136.09056820196065`, 
+            185.25}, {-239.10967162249509`, -224.54677310924367`}}],
           StatusArea[#, -0.4268594402714525]& ,
           TagBoxNote->"-0.4268594402714525"],
          StyleBox[
           RowBox[{"-", "0.4268594402714525`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.4268594402714525, {FontSize -> 14, FontSize -> 14}], 
-         "Tooltip"]& ]}, 
+         Style[-0.4268594402714525, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], "Tooltip"]& ]}, 
       {RGBColor[0.922526, 0.385626, 0.209179], EdgeForm[{Opacity[0.504], 
        Thickness[Small]}], 
        TagBox[
@@ -6209,16 +6522,22 @@ Cell[BoxData[
             RectangleBox[{0., 27.571783883064207`}, {-0.6375721953473303, 
              28.42821611693579}, "RoundingRadius" -> 0]},
            
-           ImageSizeCache->{{130.53592423568938`, 
-            225.24999999999997`}, {-324.64999999999975`, \
--305.92031674208124`}}],
+           ImageSizeCache->{{112.07057012467467`, 
+            185.25}, {-255.52999999999994`, -240.96710148674853`}}],
           StatusArea[#, -0.6375721953473303]& ,
           TagBoxNote->"-0.6375721953473303"],
          StyleBox[
           RowBox[{"-", "0.6375721953473303`"}], {
-          FontSize -> 14, FontSize -> 14}, StripOnInput -> False]],
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}, StripOnInput -> False]],
         Annotation[#, 
-         Style[-0.6375721953473303, {FontSize -> 14, FontSize -> 14}], 
+         Style[-0.6375721953473303, {
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"], 
+           Directive[12, 
+            GrayLevel[0], FontFamily -> "Arial"]}], 
          "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, {}}},
   AspectRatio->1.8,
   Axes->{False, False},
@@ -6237,311 +6556,338 @@ Cell[BoxData[
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(P\\), \\(0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(P\\), \\(0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.054}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(oc0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(oc0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.08785714285714286}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"\[Zeta]\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox[
+       "\"\[Zeta]\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.12171428571428572`}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\[Tau](\\!\\(\\*SubscriptBox[\\(CH\\), \\(4\\)]\\))\"", 12, 
-        StripOnInput -> False], TraditionalForm], 
+       "\"\[Tau](\\!\\(\\*SubscriptBox[\\(CH\\), \\(4\\)]\\))\"", 10, 
+        FontFamily -> "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.15557142857142855`}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(c\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(c\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.18942857142857142`}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(x\\), \\(0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(x\\), \\(0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.22328571428571428`}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(at0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(at0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.2571428571428571}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(f\\), \\(0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(f\\), \\(0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.291}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(so0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(so0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.32485714285714284`}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(t\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(t\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.3587142857142857}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"s\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox["\"s\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.39257142857142857`}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(ve0\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(C\\), \\(ve0\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.42642857142857143`}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"A\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox["\"A\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.46028571428571424`}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"c\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox["\"c\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.4941428571428571}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"\[Chi]\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox[
+       "\"\[Chi]\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.528}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(M\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(M\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.5618571428571429}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(E\\), \\(a\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(E\\), \\(a\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.5957142857142858}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"\[Omega]\"", 12, StripOnInput -> False], TraditionalForm], 
-      
+       StyleBox[
+       "\"\[Omega]\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.6295714285714286}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(T\\), \\(c\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(T\\), \\(c\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.6634285714285715}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(p\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(p\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.6972857142857143}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(r\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(r\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.7311428571428572}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"S\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox["\"S\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.765}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(sr\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(k\\), \\(sr\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.7988571428571429}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"\[Delta]\"", 12, StripOnInput -> False], TraditionalForm], 
-      
+       StyleBox[
+       "\"\[Delta]\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.8327142857142857}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"\[Beta]\"", 12, StripOnInput -> False], TraditionalForm], 
+       StyleBox[
+       "\"\[Beta]\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.8665714285714285}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(f\\), \\(max\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(f\\), \\(max\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.9004285714285715}], {1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"\[Kappa]\"", 12, StripOnInput -> False], TraditionalForm], 
-      
+       StyleBox[
+       "\"\[Kappa]\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{-0.025, 0.9342857142857143}], {1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"\\!\\(\\*SubscriptBox[\\(t\\), \\(f\\)]\\)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"\\!\\(\\*SubscriptBox[\\(t\\), \\(f\\)]\\)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{-0.025, 0.9681428571428572}], {1, 0}]}, {
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Water vapour saturation constant\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Water vapour saturation constant\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.054}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
        "\"Pre-industrial \\!\\(\\*SubscriptBox[\\(CO\\), \\(2\\)]\\) in ocean\
-\"", 12, StripOnInput -> False], TraditionalForm], 
+\"", 10, FontFamily -> "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.08785714285714286}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Evasion factor\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Evasion factor\"", 10, FontFamily -> "Arial", StripOnInput -> 
+        False], TraditionalForm], 
       Scaled[{1.025, 0.12171428571428572`}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Methane opacity\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Methane opacity\"", 10, FontFamily -> "Arial", StripOnInput -> 
+        False], TraditionalForm], 
       Scaled[{1.025, 0.15557142857142855`}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Photosynthesis compensation point\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Photosynthesis compensation point\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.18942857142857142`}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Initial proportion of mitigators\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Initial proportion of mitigators\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.22328571428571428`}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
        "\"Pre-industrial \\!\\(\\*SubscriptBox[\\(CO\\), \\(2\\)]\\) in \
-atmosphere\"", 12, StripOnInput -> False], TraditionalForm], 
+atmosphere\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{1.025, 0.2571428571428571}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Ocean flux rate constant\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Ocean flux rate constant\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.291}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
        "\"Pre-industrial \\!\\(\\*SubscriptBox[\\(CO\\), \\(2\\)]\\) in \
-soil\"", 12, StripOnInput -> False], TraditionalForm], 
+soil\"", 10, FontFamily -> "Arial", StripOnInput -> False], TraditionalForm], 
+      
       Scaled[{1.025, 0.32485714285714284`}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Turnover rate constant\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Turnover rate constant\"", 10, FontFamily -> "Arial", StripOnInput -> 
+        False], TraditionalForm], 
       Scaled[{1.025, 0.3587142857142857}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Half-saturation time for \[Epsilon](t)\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"Half-saturation time for \[Epsilon](t)\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.39257142857142857`}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
        "\"Pre-industrial \\!\\(\\*SubscriptBox[\\(CO\\), \\(2\\)]\\) in \
-vegetation\"", 12, StripOnInput -> False], TraditionalForm], 
+vegetation\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{1.025, 0.42642857142857143`}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Surface albedo\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Surface albedo\"", 10, FontFamily -> "Arial", StripOnInput -> 
+        False], TraditionalForm], 
       Scaled[{1.025, 0.46028571428571424`}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Specific heat capacity of Earth's surface\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"Specific heat capacity of Earth's surface\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.4941428571428571}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
        "\"Characteristic \\!\\(\\*SubscriptBox[\\(CO\\), \\(2\\)]\\) \
-solubility\"", 12, StripOnInput -> False], TraditionalForm], 
+solubility\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
+       TraditionalForm], 
       Scaled[{1.025, 0.528}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Half-saturation point for photosynthesis\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"Half-saturation point for photosynthesis\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.5618571428571429}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Plant respiration activation energy\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Plant respiration activation energy\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.5957142857142858}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Nonlinearity of warming cost function\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"Nonlinearity of warming cost function\"", 10, FontFamily -> "Arial",
+         StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.6295714285714286}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Critical temperature of warming cost function\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"Critical temperature of warming cost function\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.6634285714285715}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Photosynthesis rate constant\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Photosynthesis rate constant\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.6972857142857143}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Plant respiration constant\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Plant respiration constant\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.7311428571428572}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Solar flux\"", 12, StripOnInput -> False], 
+       StyleBox[
+       "\"Solar flux\"", 10, FontFamily -> "Arial", StripOnInput -> False], 
        TraditionalForm], 
       Scaled[{1.025, 0.765}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Soil respiration rate constant\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Soil respiration rate constant\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.7988571428571429}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Strength of social norms\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Strength of social norms\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.8327142857142857}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Cost of mitigation\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Net cost of mitigation\"", 10, FontFamily -> "Arial", StripOnInput -> 
+        False], TraditionalForm], 
       Scaled[{1.025, 0.8665714285714285}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Maximum of warming cost function\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       "\"Maximum of warming cost function\"", 10, FontFamily -> "Arial", 
+        StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.9004285714285715}], {-1, 0}], 
      InsetBox[
       FormBox[
-       StyleBox["\"Social learning rate\"", 12, StripOnInput -> False], 
-       TraditionalForm], 
+       StyleBox[
+       "\"Social learning rate\"", 10, FontFamily -> "Arial", StripOnInput -> 
+        False], TraditionalForm], 
       Scaled[{1.025, 0.9342857142857143}], {-1, 0}], 
      InsetBox[
       FormBox[
        StyleBox[
-       "\"Time horizon of temperature projection\"", 12, StripOnInput -> 
-        False], TraditionalForm], 
+       "\"Time horizon of temperature projection\"", 10, FontFamily -> 
+        "Arial", StripOnInput -> False], TraditionalForm], 
       Scaled[{1.025, 0.9681428571428572}], {-1, 0}]}},
   Frame->{{True, True}, {True, False}},
   FrameLabel->{{
@@ -6635,9 +6981,10 @@ solubility\"", 12, StripOnInput -> False], TraditionalForm],
     20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  ImagePadding->{{50, 250}, {50, 10}},
-  ImageSize->650,
-  LabelStyle->14,
+  ImagePadding->{{50, 220}, {50, 10}},
+  ImageSize->540.,
+  LabelStyle->Directive[12, 
+    GrayLevel[0], FontFamily -> "Arial"],
   PlotRange->{{-1.065845203623426, 1.065845203623426}, {All, All}},
   PlotRangePadding->{{
      Scaled[0.05], 
@@ -6645,139 +6992,36 @@ solubility\"", 12, StripOnInput -> False], TraditionalForm],
      Scaled[0.02], 
      Scaled[0.02]}},
   Ticks->{Automatic, None}]], "Output",
- CellChangeTimes->{
-  3.731334347521686*^9, 3.731334447547392*^9, 3.731335006689033*^9, 
-   3.73178450268316*^9, 3.731784982922448*^9, 3.731785410715426*^9, 
-   3.731785592517473*^9, 3.731785895878684*^9, 3.731785941667861*^9, 
-   3.7317862680961123`*^9, 3.7317864770912733`*^9, 3.731787324290518*^9, 
-   3.7317875088445597`*^9, 3.731787668027484*^9, 3.731792905220045*^9, 
-   3.7317940063528843`*^9, 3.731794136388172*^9, 3.731794195229087*^9, 
-   3.73179425689193*^9, 3.731794419150661*^9, 3.731795370095517*^9, 
-   3.731796609826063*^9, 3.731796782307954*^9, 3.731797035396392*^9, 
-   3.7317994683418217`*^9, 3.731946524779002*^9, 3.7319466817554073`*^9, 
-   3.7329890848254547`*^9, 3.734207268951639*^9, 3.73420744281542*^9, {
-   3.734207814698584*^9, 3.734207838793953*^9}, 3.734208570330365*^9, 
-   3.734208693732222*^9, 3.734208796616889*^9, 3.734209057044141*^9, 
-   3.756248139411137*^9, 3.7562482325253363`*^9, 3.7562484597741003`*^9, 
-   3.7562485515048647`*^9, 3.756248638698943*^9, 3.756248750243114*^9, 
-   3.756312016905023*^9, 3.756312168824399*^9, 3.756312217073818*^9, 
-   3.757173085653265*^9},ExpressionUUID->"3d51d9e9-40c2-4c8f-b963-\
-5927580b0d8a"]
+ CellChangeTimes->{{3.76391798906961*^9, 3.763917992461958*^9}, {
+   3.7639181290963383`*^9, 3.7639181772307873`*^9}, {3.7639182189623013`*^9, 
+   3.763918233388234*^9}, {3.7639183220165243`*^9, 3.763918341007596*^9}, {
+   3.763918546108528*^9, 3.763918564260112*^9}, 3.763918632575468*^9, 
+   3.763918664036645*^9, {3.7639187347071247`*^9, 3.763918745023542*^9}, 
+   3.7639187870629883`*^9, 3.763918965627775*^9, 3.763919922240011*^9, 
+   3.763988527022752*^9},ExpressionUUID->"f7393b2a-dd23-46ec-8348-\
+e318d11d6d28"]
 }, Open  ]],
-
-Cell[BoxData[
- RowBox[{"(*", 
-  RowBox[{
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<figures/fig_tornado.png\>\"", ",", "tornadoPlot", ",", 
-     RowBox[{"ImageResolution", "\[Rule]", "200"}]}], "]"}], ";"}], 
-  "*)"}]], "Input",
- CellChangeTimes->{{3.7313344593377113`*^9, 3.731334482726254*^9}, {
-  3.734207906031829*^9, 
-  3.7342079313170033`*^9}},ExpressionUUID->"5c843ec1-45ac-440a-af3d-\
-764aff2b305a"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Explore", "Section",
- CellChangeTimes->{{3.7571731539060497`*^9, 
-  3.7571731555601053`*^9}},ExpressionUUID->"c9dd0e32-dc94-472e-b81b-\
-7bde9240cf03"],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"Reverse", "[", "lowerParDevs", "]"}], ",", 
-     RowBox[{"Reverse", "[", "upperParDevs", "]"}]}], "}"}], "//", 
-   "Transpose"}], "//", "TableForm"}]], "Input",
- CellChangeTimes->{{3.757173156644516*^9, 3.7571731785052233`*^9}, {
-  3.757173231333234*^9, 
-  3.757173260004232*^9}},ExpressionUUID->"263dfcda-a5d9-4111-90aa-\
-9e0ac9ca228b"],
-
-Cell[BoxData[
- TagBox[GridBox[{
-    {"1.045845203623426`", 
-     RowBox[{"-", "0.6375721953473303`"}]},
-    {"0.6489409042146979`", 
-     RowBox[{"-", "0.4268594402714525`"}]},
-    {"0.378649944942953`", 
-     RowBox[{"-", "0.2171217020252847`"}]},
-    {
-     RowBox[{"-", "0.2152132353204288`"}], "0.28004362570105545`"},
-    {
-     RowBox[{"-", "0.16727366122160214`"}], "0.2284264379901546`"},
-    {"0.19687806644743633`", 
-     RowBox[{"-", "0.02543969930574619`"}]},
-    {"0.18904199211166706`", "0.09340236960074044`"},
-    {"0.1587236689058602`", 
-     RowBox[{"-", "0.04596482423911885`"}]},
-    {
-     RowBox[{"-", "0.05158929555928404`"}], "0.1499027241744506`"},
-    {
-     RowBox[{"-", "0.12873052711286848`"}], "0.13426426890772358`"},
-    {"0.12319064160771998`", 
-     RowBox[{"-", "0.03186596679951226`"}]},
-    {
-     RowBox[{"-", "0.04746635226199336`"}], "0.12041853346096243`"},
-    {"0.07300570178155086`", 
-     RowBox[{"-", "0.04853283089195992`"}]},
-    {"0.05855005265304536`", 
-     RowBox[{"-", "0.03955072115526992`"}]},
-    {
-     RowBox[{"-", "0.03974848575218681`"}], "0.03743238285145711`"},
-    {"0.034557468276327885`", 
-     RowBox[{"-", "0.027234987148100576`"}]},
-    {
-     RowBox[{"-", "0.020397069204973306`"}], "0.028515134874316228`"},
-    {
-     RowBox[{"-", "0.027231151798969844`"}], "0.017494261541991296`"},
-    {"0.001923180220385845`", "0.023026822071569253`"},
-    {"0.016560606088844576`", 
-     RowBox[{"-", "0.013361334698290595`"}]},
-    {"0.01529344557934964`", 
-     RowBox[{"-", "0.013610200160147023`"}]},
-    {
-     RowBox[{"-", "0.012649352797929225`"}], "0.012812138121003347`"},
-    {
-     RowBox[{"-", "0.0028284429266558497`"}], "0.00629771849522287`"},
-    {"0.005049072614830674`", 
-     RowBox[{"-", "0.0049953956411794564`"}]},
-    {
-     RowBox[{"-", "0.003312710935897911`"}], "0.0033298417626754784`"},
-    {
-     RowBox[{"-", "0.002992347593097744`"}], "0.0029497370543678514`"},
-    {"0.0010583445815184334`", 
-     RowBox[{"-", "0.0009304904227414035`"}]},
-    {"9.65094670846156`*^-12", "0.`"}
-   },
-   GridBoxAlignment->{
-    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-     "RowsIndexed" -> {}},
-   GridBoxSpacings->{"Columns" -> {
-       Offset[0.27999999999999997`], {
-        Offset[2.0999999999999996`]}, 
-       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-       Offset[0.2], {
-        Offset[0.4]}, 
-       Offset[0.2]}, "RowsIndexed" -> {}}],
-  Function[BoxForm`e$, 
-   TableForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.7571731588381863`*^9, 3.7571731789161577`*^9}, {
-  3.7571732327785187`*^9, 
-  3.757173260183961*^9}},ExpressionUUID->"0e343a2e-2313-4602-a56e-\
-581df703339f"]
-}, Open  ]]
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<figures/figure4.tiff\>\"", ",", "tornadoPlot", ",", 
+    RowBox[{"ImageResolution", "\[Rule]", "300"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"\"\<ImageEncoding\>\"", "\[Rule]", "\"\<LZW\>\""}]}], 
+   "\[IndentingNewLine]", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7313344593377113`*^9, 3.731334482726254*^9}, {
+  3.734207906031829*^9, 3.7342079313170033`*^9}, {3.763918238864212*^9, 
+  3.7639182390372143`*^9}, {3.763918819879665*^9, 3.763918820732463*^9}, {
+  3.7639188656613894`*^9, 3.763918866195681*^9}, {3.7639199374233847`*^9, 
+  3.763919944056056*^9}, {3.763919986532269*^9, 3.7639199867439737`*^9}, {
+  3.76398843226379*^9, 3.76398843247501*^9}, {3.763988490327237*^9, 
+  3.763988524620059*^9}},ExpressionUUID->"5a3803c5-633c-45b9-9a79-\
+fc3a1dcc141e"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1198, 710},
-WindowMargins->{{Automatic, -1548}, {Automatic, -24}},
+WindowMargins->{{Automatic, -1542}, {Automatic, 90}},
 FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 27, \
 2017)",
 StyleDefinitions->"Default.nb"
@@ -6799,196 +7043,186 @@ Cell[580, 22, 903, 13, 69, "Subchapter", "ExpressionUUID" -> \
 Cell[CellGroupData[{
 Cell[1508, 39, 121, 1, 64, "Section", "ExpressionUUID" -> \
 "c835801d-50e5-4464-9eaf-7e54fa2eee58"],
-Cell[1632, 42, 630, 14, 32, "Input", "ExpressionUUID" -> \
-"11f251a6-4ac6-4054-a1b7-4d8fe51ac25f"],
+Cell[1632, 42, 602, 13, 32, "Input", "ExpressionUUID" -> \
+"04500246-7b91-455c-af3f-ff14514ec2a7"],
 Cell[CellGroupData[{
-Cell[2287, 60, 1637, 43, 159, "Input", "ExpressionUUID" -> \
+Cell[2259, 59, 1637, 43, 159, "Input", "ExpressionUUID" -> \
 "241db403-a2dd-42f7-a725-e2dcc755ac9e"],
-Cell[3927, 105, 33505, 774, 32, "Output", "ExpressionUUID" -> \
-"ecfda2c6-78b0-415b-b6bd-7d38d7ee9c6c"]
+Cell[3899, 104, 33600, 775, 32, "Output", "ExpressionUUID" -> \
+"700edbc7-5687-4522-ae78-8fd7ef17517b"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37481, 885, 364, 4, 64, "Section", "ExpressionUUID" -> \
+Cell[37548, 885, 364, 4, 64, "Section", "ExpressionUUID" -> \
 "daab72d7-9333-482a-89c2-6bdf8ed0c7ea"],
 Cell[CellGroupData[{
-Cell[37870, 893, 163, 3, 44, "Subsection", "ExpressionUUID" -> \
+Cell[37937, 893, 163, 3, 44, "Subsection", "ExpressionUUID" -> \
 "66d9fa8a-32d5-4d55-84d6-4b918667a7e2"],
-Cell[38036, 898, 2241, 42, 100, "Input", "ExpressionUUID" -> \
+Cell[38103, 898, 2241, 42, 100, "Input", "ExpressionUUID" -> \
 "7e93bc17-bc45-4453-99f1-e647429f9f2b"],
-Cell[40280, 942, 2333, 44, 201, "Input", "ExpressionUUID" -> \
+Cell[40347, 942, 2385, 44, 201, "Input", "ExpressionUUID" -> \
 "c71ead07-8aac-47ec-a533-4cc7ed920db3"],
 Cell[CellGroupData[{
-Cell[42638, 990, 284, 8, 32, "Input", "ExpressionUUID" -> \
+Cell[42757, 990, 284, 8, 32, "Input", "ExpressionUUID" -> \
 "723f554b-9fed-492c-8606-85445a14c076"],
-Cell[42925, 1000, 4093, 79, 584, "Output", "ExpressionUUID" -> \
-"a067c4fe-8597-40d5-a573-662b573c552e"]
+Cell[43044, 1000, 4169, 80, 584, "Output", "ExpressionUUID" -> \
+"e0bf9a76-fada-47f6-9f2e-bd958fbc2bbd"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[47067, 1085, 107, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[47262, 1086, 107, 1, 44, "Subsection", "ExpressionUUID" -> \
 "8d1a7cb1-eaac-4c60-b176-ef32068cdaab"],
-Cell[47177, 1088, 2982, 74, 159, "Input", "ExpressionUUID" -> \
+Cell[47372, 1089, 2982, 74, 159, "Input", "ExpressionUUID" -> \
 "5c02fdff-5531-40f5-b976-e70c61d3a968"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[50196, 1167, 104, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[50391, 1168, 104, 1, 44, "Subsection", "ExpressionUUID" -> \
 "62d250d8-2d77-4644-8cff-e387dad09c87"],
-Cell[50303, 1170, 12435, 237, 495, "Input", "ExpressionUUID" -> \
+Cell[50498, 1171, 12435, 237, 495, "Input", "ExpressionUUID" -> \
 "589a24cd-78c7-45b1-8eda-f6330f19e5ae"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[62775, 1412, 106, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[62970, 1413, 106, 1, 44, "Subsection", "ExpressionUUID" -> \
 "89e617d0-0863-4d98-8d8a-4b7f8951c2ab"],
-Cell[62884, 1415, 1493, 40, 138, "Input", "ExpressionUUID" -> \
+Cell[63079, 1416, 1493, 40, 138, "Input", "ExpressionUUID" -> \
 "503e79bd-33c0-409a-9c05-3084525def5f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[64414, 1460, 172, 2, 44, "Subsection", "ExpressionUUID" -> \
+Cell[64609, 1461, 172, 2, 44, "Subsection", "ExpressionUUID" -> \
 "1e5287f8-0d79-470e-bb12-d33f4ad18674"],
-Cell[64589, 1464, 2584, 72, 222, "Input", "ExpressionUUID" -> \
+Cell[64784, 1465, 2584, 72, 222, "Input", "ExpressionUUID" -> \
 "ad7e0842-b4a2-4ab6-aee9-1c9f5a49da26"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[67210, 1541, 154, 2, 44, "Subsection", "ExpressionUUID" -> \
+Cell[67405, 1542, 154, 2, 44, "Subsection", "ExpressionUUID" -> \
 "472b9de2-ac51-48f8-99d7-b6528cc661f7"],
-Cell[67367, 1545, 2999, 92, 264, "Input", "ExpressionUUID" -> \
+Cell[67562, 1546, 2999, 92, 264, "Input", "ExpressionUUID" -> \
 "57c4295d-1e0a-4437-8bcc-c2d786896223"],
-Cell[70369, 1639, 5952, 164, 432, "Input", "ExpressionUUID" -> \
+Cell[70564, 1640, 5952, 164, 432, "Input", "ExpressionUUID" -> \
 "efa3beea-f3ce-4420-a31c-ceb716501797"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[76358, 1808, 112, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[76553, 1809, 112, 1, 44, "Subsection", "ExpressionUUID" -> \
 "fe07ef4e-e10a-4dda-9aa9-cdca0c16bd4a"],
-Cell[76473, 1811, 869, 27, 117, "Input", "ExpressionUUID" -> \
+Cell[76668, 1812, 869, 27, 117, "Input", "ExpressionUUID" -> \
 "1bf16545-8a53-497f-9fb6-9a3b4d6a78b3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[77379, 1843, 108, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[77574, 1844, 108, 1, 44, "Subsection", "ExpressionUUID" -> \
 "25916519-053f-41a8-8f7b-e80f63c41d30"],
-Cell[77490, 1846, 665, 18, 54, "Input", "ExpressionUUID" -> \
+Cell[77685, 1847, 665, 18, 54, "Input", "ExpressionUUID" -> \
 "df5e2667-2bd0-459a-88d8-e5af9cfd6a07"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[78204, 1870, 158, 2, 64, "Section", "ExpressionUUID" -> \
+Cell[78399, 1871, 158, 2, 64, "Section", "ExpressionUUID" -> \
 "0d07abd8-cbd0-4116-b549-fbc51f63fbe2"],
-Cell[78365, 1874, 5606, 169, 768, "Input", "ExpressionUUID" -> \
+Cell[78560, 1875, 5610, 170, 768, "Input", "ExpressionUUID" -> \
 "2a692033-21fc-46fb-b46b-efe856f9c49b"],
-Cell[83974, 2045, 953, 23, 75, "Input", "ExpressionUUID" -> \
+Cell[84173, 2047, 953, 23, 75, "Input", "ExpressionUUID" -> \
 "54595ad5-3004-42ff-8ab8-36b7216adcc5"],
-Cell[84930, 2070, 584, 15, 32, "Input", "ExpressionUUID" -> \
+Cell[85129, 2072, 584, 15, 32, "Input", "ExpressionUUID" -> \
 "33fe0343-32db-4b5c-9f26-a30463279bb2"],
-Cell[85517, 2087, 959, 20, 96, "Input", "ExpressionUUID" -> \
+Cell[85716, 2089, 959, 20, 96, "Input", "ExpressionUUID" -> \
 "5c38fbc9-18f3-423a-b11d-8e989718090e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[86513, 2112, 299, 4, 64, "Section", "ExpressionUUID" -> \
+Cell[86712, 2114, 299, 4, 64, "Section", "ExpressionUUID" -> \
 "46821f2c-a448-4c99-95e1-bf658fbda657"],
 Cell[CellGroupData[{
-Cell[86837, 2120, 112, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[87036, 2122, 112, 1, 44, "Subsection", "ExpressionUUID" -> \
 "5c24f3ae-f3ea-4e22-bd02-b60d32a3887b"],
-Cell[86952, 2123, 3955, 97, 957, "Input", "ExpressionUUID" -> \
+Cell[87151, 2125, 3955, 97, 957, "Input", "ExpressionUUID" -> \
 "dfdae1bb-f1e6-4b45-beb2-2b44212115c3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[90944, 2225, 105, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[91143, 2227, 105, 1, 44, "Subsection", "ExpressionUUID" -> \
 "c4d3bf1b-c3ae-470f-a53f-6350a6d9787b"],
-Cell[91052, 2228, 13697, 380, 1545, "Input", "ExpressionUUID" -> \
+Cell[91251, 2230, 13693, 379, 1545, "Input", "ExpressionUUID" -> \
 "7aa3b800-3ae1-4bc4-8796-37fd5d1009e7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[104786, 2613, 102, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[104981, 2614, 102, 1, 44, "Subsection", "ExpressionUUID" -> \
 "3151896b-fd23-4e1d-9b2c-73d87cb4ff63"],
-Cell[104891, 2616, 13316, 339, 999, "Input", "ExpressionUUID" -> \
+Cell[105086, 2617, 13316, 339, 999, "Input", "ExpressionUUID" -> \
 "5382a541-6aa2-4927-bcbd-38324d08c167"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[118256, 2961, 243, 3, 64, "Section", "ExpressionUUID" -> \
+Cell[118451, 2962, 243, 3, 64, "Section", "ExpressionUUID" -> \
 "d315542e-b9b2-4950-998f-53b5269e972e"],
-Cell[118502, 2966, 785, 19, 54, "Input", "ExpressionUUID" -> \
+Cell[118697, 2967, 785, 19, 54, "Input", "ExpressionUUID" -> \
 "798e4717-ae9d-4f71-9a6b-3ca466c0e85f"],
 Cell[CellGroupData[{
-Cell[119312, 2989, 100, 1, 44, "Subsection", "ExpressionUUID" -> \
+Cell[119507, 2990, 100, 1, 44, "Subsection", "ExpressionUUID" -> \
 "28acf9a0-cd65-443b-8f70-2dec3811dad3"],
-Cell[119415, 2992, 209, 5, 32, "Input", "ExpressionUUID" -> \
+Cell[119610, 2993, 209, 5, 32, "Input", "ExpressionUUID" -> \
 "a2611908-93cd-4ca2-946f-db0eca2b25c5"],
 Cell[CellGroupData[{
-Cell[119649, 3001, 163, 3, 32, "Input", "ExpressionUUID" -> \
+Cell[119844, 3002, 163, 3, 32, "Input", "ExpressionUUID" -> \
 "72a36735-9b36-4663-88a0-5af1d6e3af17"],
-Cell[119815, 3006, 2108, 36, 35, "Output", "ExpressionUUID" -> \
-"89b20430-cbd8-4384-896c-aa9860c4a8d0"]
+Cell[120010, 3007, 2143, 37, 35, "Output", "ExpressionUUID" -> \
+"7f123411-b073-4942-bb4b-2fc8d7bd8f1b"]
 }, Open  ]],
-Cell[121938, 3045, 709, 19, 75, "Input", "ExpressionUUID" -> \
+Cell[122168, 3047, 709, 19, 75, "Input", "ExpressionUUID" -> \
 "45581cb9-2a5e-42cc-9696-b8d234284d60"],
-Cell[122650, 3066, 41564, 1009, 3403, "Input", "ExpressionUUID" -> \
+Cell[122880, 3068, 41564, 1009, 3403, "Input", "ExpressionUUID" -> \
 "11ba75ce-87e3-4cca-be94-7ef859235898"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[164263, 4081, 104, 1, 64, "Section", "ExpressionUUID" -> \
+Cell[164493, 4083, 104, 1, 64, "Section", "ExpressionUUID" -> \
 "5cc9f960-3430-4fa3-ad38-e9900f58d2fa"],
 Cell[CellGroupData[{
-Cell[164392, 4086, 159, 3, 44, "Subsection", "ExpressionUUID" -> \
+Cell[164622, 4088, 159, 3, 44, "Subsection", "ExpressionUUID" -> \
 "4aed17d1-ad11-4ff6-925f-c73f359558c0"],
 Cell[CellGroupData[{
-Cell[164576, 4093, 699, 18, 54, "Input", "ExpressionUUID" -> \
+Cell[164806, 4095, 699, 18, 54, "Input", "ExpressionUUID" -> \
 "d530e222-402c-489d-b1be-6c657f5b5d6c"],
-Cell[165278, 4113, 8175, 167, 612, "Output", "ExpressionUUID" -> \
-"abc194c3-a1cf-450b-9e75-50c39df2e293"]
+Cell[165508, 4115, 8344, 169, 612, "Output", "ExpressionUUID" -> \
+"885bee20-7fcc-4224-ad94-0517168b22a4"]
 }, Open  ]],
-Cell[173468, 4283, 765, 18, 32, "Input", "ExpressionUUID" -> \
+Cell[173867, 4287, 765, 18, 32, "Input", "ExpressionUUID" -> \
 "651c2e74-e6c0-4b0a-bfc0-b0a19e3ab77d"],
-Cell[174236, 4303, 334, 9, 32, "Input", "ExpressionUUID" -> \
+Cell[174635, 4307, 334, 9, 32, "Input", "ExpressionUUID" -> \
 "ae8f8e65-4882-4433-bf22-986cd656a0cc"],
-Cell[174573, 4314, 377, 11, 54, "Input", "ExpressionUUID" -> \
+Cell[174972, 4318, 377, 11, 54, "Input", "ExpressionUUID" -> \
 "68e2faca-cba3-4186-a288-c1895e922462"],
-Cell[174953, 4327, 1299, 32, 54, "Input", "ExpressionUUID" -> \
+Cell[175352, 4331, 1299, 32, 54, "Input", "ExpressionUUID" -> \
 "c4411e51-f637-44b4-8709-e6f4bda78240"],
-Cell[176255, 4361, 391, 9, 32, "Input", "ExpressionUUID" -> \
+Cell[176654, 4365, 391, 9, 32, "Input", "ExpressionUUID" -> \
 "064b9d6f-3939-4f55-a0fe-e344495110dc"],
-Cell[176649, 4372, 422, 12, 32, "Input", "ExpressionUUID" -> \
+Cell[177048, 4376, 422, 12, 32, "Input", "ExpressionUUID" -> \
 "3e8d684a-7754-49ba-856f-d08aa46adf80"],
-Cell[177074, 4386, 1325, 35, 75, "Input", "ExpressionUUID" -> \
+Cell[177473, 4390, 1325, 35, 75, "Input", "ExpressionUUID" -> \
 "67a94954-e850-40dd-8e4d-83a71f59c433"],
 Cell[CellGroupData[{
-Cell[178424, 4425, 452, 13, 54, "Input", "ExpressionUUID" -> \
+Cell[178823, 4429, 452, 13, 54, "Input", "ExpressionUUID" -> \
 "bf2bd66a-cb28-4427-953d-40733c71bbeb"],
-Cell[178879, 4440, 1593, 23, 32, "Output", "ExpressionUUID" -> \
-"a9d55611-a622-4616-bce6-0359a3126c4a"]
+Cell[179278, 4444, 1757, 25, 32, "Output", "ExpressionUUID" -> \
+"d2a00b2a-82f9-4d69-a1a2-ee0de924c980"]
 }, Open  ]],
-Cell[180487, 4466, 4913, 108, 306, "Input", "ExpressionUUID" -> \
+Cell[181050, 4472, 5365, 116, 306, "Input", "ExpressionUUID" -> \
 "821f0b64-3923-47a9-80a0-dce3d00ce320"],
-Cell[185403, 4576, 5435, 115, 222, "Input", "ExpressionUUID" -> \
+Cell[186418, 4590, 5729, 119, 243, "Input", "ExpressionUUID" -> \
 "0b1a3df7-bfbc-4667-9802-7f1f141723f1"],
-Cell[190841, 4693, 1496, 25, 96, "Input", "ExpressionUUID" -> \
-"17f37a0f-6497-4dd3-abb1-7a9e0c248570"],
-Cell[192340, 4720, 669, 13, 32, "Input", "ExpressionUUID" -> \
-"063bf224-4c85-4b6c-b626-2ebc65cce454"]
+Cell[192150, 4711, 1546, 26, 96, "Input", "ExpressionUUID" -> \
+"17f37a0f-6497-4dd3-abb1-7a9e0c248570"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[193058, 4739, 91, 1, 64, "Section", "ExpressionUUID" -> \
+Cell[193745, 4743, 91, 1, 64, "Section", "ExpressionUUID" -> \
 "fe3e749b-174f-495a-98ce-0d38210dca91"],
+Cell[193839, 4746, 153, 4, 32, "Input", "ExpressionUUID" -> \
+"02a67f50-8313-4ab0-b3e0-d8688422aea5"],
 Cell[CellGroupData[{
-Cell[193174, 4744, 162, 3, 32, "Input", "ExpressionUUID" -> \
-"8858cda6-8a59-4286-824d-831918873336"],
-Cell[193339, 4749, 74843, 1915, 705, "Output", "ExpressionUUID" -> \
-"3d51d9e9-40c2-4c8f-b963-5927580b0d8a"]
+Cell[194017, 4754, 559, 13, 32, "Input", "ExpressionUUID" -> \
+"d3d3257b-6f24-4458-8a8b-16e8e9c52924"],
+Cell[194579, 4769, 87116, 2232, 561, "Output", "ExpressionUUID" -> \
+"f7393b2a-dd23-46ec-8348-e318d11d6d28"]
 }, Open  ]],
-Cell[268197, 6667, 408, 10, 32, "Input", "ExpressionUUID" -> \
-"5c843ec1-45ac-440a-af3d-764aff2b305a"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[268642, 6682, 156, 3, 64, "Section", "ExpressionUUID" -> \
-"c9dd0e32-dc94-472e-b81b-7bde9240cf03"],
-Cell[CellGroupData[{
-Cell[268823, 6689, 416, 11, 32, "Input", "ExpressionUUID" -> \
-"263dfcda-a5d9-4111-90aa-9e0ac9ca228b"],
-Cell[269242, 6702, 2721, 71, 560, "Output", "ExpressionUUID" -> \
-"0e343a2e-2313-4602-a56e-581df703339f"]
-}, Open  ]]
+Cell[281710, 7004, 835, 14, 75, "Input", "ExpressionUUID" -> \
+"5a3803c5-633c-45b9-9a79-fc3a1dcc141e"]
 }, Open  ]]
 }, Open  ]]
 }
