@@ -1,0 +1,589 @@
+% Template for PLoS
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL ../../../overleaf/manu_v2.tex   Tue Apr 16 16:55:37 2019
+%DIF ADD manu_v3.tex                     Tue Apr 16 16:46:13 2019
+% Version 3.5 March 2018
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Once your paper is accepted for publication, 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file 
+% and leave only the final text of your manuscript. 
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info or contact us at latex@plos.org.
+%
+%
+% There are no restrictions on package use within the LaTeX files except that 
+% no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file. 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% For inline equations, please be sure to include all portions of an equation in the math environment.  For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+%
+% Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column. 
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% When adding superscript or subscripts outside of brackets/braces, please group using {}.  For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2". 
+%
+% Do not use \cal for caligraphic font.  Instead, use \mathcal{}
+%
+% % % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% package with degree symbol
+\usepackage{gensymb}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Charting pathways to climate change mitigation in a coupled socio-climate model} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Thomas M. Bury\textsuperscript{1,2,*},
+Chris T. Bauch\textsuperscript{1},
+Madhur Anand\textsuperscript{2}
+\\
+\bigskip
+\textbf{1} Department of Applied Mathematics, University of Waterloo, Waterloo, ON N2L 3G1, Canada
+\\
+\textbf{2} School of Environmental Sciences, University of Guelph, Guelph, ON N1G 2W1, Canada
+\\
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+% \Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+% \ddag These authors also contributed equally to this work.
+
+% Current address notes
+% \textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address 
+% \textcurrency c Insert third current address
+
+% Deceased author note
+% \dag Deceased
+
+% Group/Consortium Author Note
+% \textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* tbury@uwaterloo.ca
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+\section*{Abstract}
+Geophysical models of climate change are becoming increasingly sophisticated, yet less effort is devoted to modelling the human systems causing climate change and how the two systems are coupled. Here, we develop a simple socio-climate model by coupling an Earth system model to a social dynamics model. We treat social processes endogenously \DIFdelbegin \DIFdel{– }\DIFdelend \DIFaddbegin \DIFadd{? }\DIFaddend emerging from rules governing how individuals learn socially and how social norms develop \DIFdelbegin \DIFdel{– }\DIFdelend \DIFaddbegin \DIFadd{? }\DIFaddend as well as being influenced by climate change and mitigation costs. Our goal is to gain qualitative insights into scenarios of potential socio-climate dynamics and to illustrate how such models can generate new research questions. We find that the social learning rate is strongly influential, to the point that variation of its value within empirically plausible ranges changes the peak global temperature anomaly by more than 1\degree C. Conversely, social norms reinforce majority behaviour and therefore may not provide help when we most need it because they suppress the early spread of mitigative behaviour. Finally, exploring the model\DIFdelbegin \DIFdel{’}\DIFdelend \DIFaddbegin \DIFadd{?}\DIFaddend s parameter space for mitigation cost and social learning suggests optimal intervention pathways for climate change mitigation. We find that prioritising an increase in social learning as a first step, followed by a reduction in mitigation costs provides the most efficient route to a reduced peak temperature anomaly. We conclude that socio-climate models should be included in the ensemble of models used to project climate change.
+
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step. 
+% Author Summary not valid for PLOS ONE submissions.   
+\section*{Author summary}
+The importance of anthropogenic $\text{CO}_2$ emissions on climate change trajectories is widely acknowledged. However, geophysical climate models rarely account for dynamic human behaviour, which determines the emissions trajectory, and is itself affected by the climate system. Here, using a coupled socio-climate model, we show how social processes can strongly alter climate trajectories and we suggest optimal intervention pathways based on the model projections. Steps to increase social learning surrounding climate change should initially be prioritised for maximum impact, making a subsequent reduction in mitigation costs more effective. Policymakers will benefit from a better understanding of how social and climate processes interact, which can be provided by socio-climate models.
+
+\linenumbers
+
+% Use "Eq" instead of "Equation" for equation citations.
+\section*{Introduction}
+According to many ancient myths, humans did not invent fire-making de novo but rather learned it from personalities like Prometheus and subsequently spread the practice amongst themselves. These stories reveal how ancient myth-makers already grasped the fundamental importance of social learning - the process whereby individuals learn new behaviours, values and opinions from others \cite{reed10}. Social learning is no less relevant in the era of human-environment challenges \cite{henderson16,bauch16,galvani16}. The importance of social learning and social processes more generally in climate change mitigation and adaptation is well recognised \cite{castree14,clayton15,bollinger12,baird14}. Increasingly sophisticated geophysical climate models are helping us understand the impacts of anthropogenic greenhouse gas (GHG) emissions \cite{bopp13,collins11,sterman12}, and the importance of these models is hard to understate. However, climate projections depend strongly on the assumed trajectory of GHG emissions \cite{vuuren11}. This trajectory is determined by human behaviour and yet climate models generally do not incorporate dynamic social processes relevant to GHG emissions. Rather, GHG emissions are assumed to follow some specified trajectory.  These trajectories are constructed with socio-economic factors in mind, (see Representative Concentration Pathways \cite{vuuren11} and Shared Socioeconomic Pathways \cite{oneill14} for instance), but are not coupled to climate dynamics and do not capture human responses to climate change in a mechanistic way.
+
+Just as human behaviour influences climate trends, climate change in turn influences human behaviour concerning GHG emissions, including both climate change mitigation and adaptation \cite{castree14,clayton15,baird14,weber10,howe13}. Individuals in places with rising average temperatures are more likely to perceive climate change \cite{howe13}, and social effects are apparent when individuals take steps in response to such shifting perceptions \cite{clayton15,baird14}. There is also an important distinction between social learning and social norms\DIFdelbegin \DIFdel{–}\DIFdelend \DIFaddbegin \DIFadd{?}\DIFaddend socially accepted and widely practiced modes of conduct \cite{allcott11}. Social norms are known to have a strong influence on human behaviour \cite{cialdini91} including aspects relating to climate change \cite{bollinger12,allcott11,nolan08} and therefore play an important role in determining emission trajectories \cite{clayton15}. Multiple studies show a tendency for individuals to conform to emerging norms in support of climate change mitigation \cite{bollinger12,allcott11}. Moreover, it appears that individuals are often not consciously aware of the importance of social norms in their decision-making and instead falsely ascribe their decisions to other factors \cite{nolan08}. However, it is important to note that social norms do not automatically promote socially beneficial outcomes. They can equally well force conformity to a destructive norm such as political extremism \cite{smith14}. This also happens in the context of climate change behaviour, where it has been found that individuals may also conform to a norm of non-mitigation, by adjusting their habits to match those of less environmentally friendly neighbours \cite{nolan08,stoll01}.
+
+Hence, Earth\DIFdelbegin \DIFdel{’}\DIFdelend \DIFaddbegin \DIFadd{?}\DIFaddend s climate and human subsystems are part of a single coupled system where social dynamics play a vital role. Yet, models of Earth\DIFdelbegin \DIFdel{’}\DIFdelend \DIFaddbegin \DIFadd{?}\DIFaddend s coupled climate-behaviour system remain essentially undeveloped. One such approach \cite{beckage18} couples a sophisticated climate model \cite{sterman12} to a model for individual behavioural change based on the theory of planned behaviour - a dominant paradigm in psychology \cite{ajzen91}. The authors find that the sensitivity of global temperature change to human factors such as response to extreme events, social norms and perceived ability to adopt mitigative strategies is of a similar magnitude to its sensitivity to geophysical factors. They deduce that quantifying behavioural uncertainty and physical uncertainty in climate projections deserve equal attention. The model focuses on how individual psychology and behaviour are influenced by extreme weather events. Social effects are modelled phenomenologically (i.e., exogenously imposed): individuals do not learn behaviour or opinions from one another, and social norms are treated as a fixed effect that does not depend on the population\DIFdelbegin \DIFdel{’}\DIFdelend \DIFaddbegin \DIFadd{?}\DIFaddend s current composition of attitudes.
+
+Here, we treat social learning and social norms endogenously, by modelling their dynamics as they emerge from rules governing how individuals interact, learn and behave. Our first objective is to develop qualitative insights into how different aspects of the system - endogenous social processes, temperature trends, and mitigation costs - separately and together determine possible dynamics of the larger socio-climate system. Our second objective is to illustrate potential uses of coupled socio-climate models to chart social and economic policy pathways that mitigate climate change as quickly as possible. To meet these objectives, we sought to develop a model that (1) could capture a range of IPCC climate change scenarios, ranging from 4 degrees of warming by 2100 (RCP 8.5 scenario) to sub 2 degrees of warming (RCP 2.6 scenario), (2) was simple enough to analyse so that we could learn which mechanisms drive the predicted socio-climate dynamics, (3) was based on existing approaches for modelling social dynamics and climate dynamics, and (4) captured the salient features of social and climate systems.
+Given the model's simplicity, it is primed for insights as to how social and climate processes interact, though limited in its predictive capacity due to the complexity of the socio-climate system. The development of more complex socio-climate models will be an important research avenue, once the mechanisms of socio-climate dynamics are better understood.
+
+
+
+%-----Methods-----%
+\section*{Materials and methods}
+
+\subsection*{Model}
+Geophysical models in the climate science literature span a wide range of different complexities depending on the associated research objective. Highly complex models are the state-of-the-art for weather and climate prediction \cite{sterman12,knutti13,kusunoki16}, whereas simple models allow us to assess processes and feedbacks, thereby improving our intuition  of climate system dynamics \cite{lenton00,cox00,cox06,nakajima92,may04}. Likewise, the behavioural sciences have benefited from a variety of modelling approaches, that address the diverse set of social processes that take place on the individual and societal level \cite{helbing10}. Here, we use minimal models for both social and climate dynamics. Starting simple allows us to build intuition on the effect of socio-climate feedbacks that have yet been considered in the climate change literature. The social model is widespread and, despite its simplicity, captures the salient aspects of social dynamics \cite{helbing10,innes13,henderson16}. Moreover, the simple Earth system model that we use\cite{lenton00} accurately follows the projections of the state-of-the-art CMIP5 models when forced with the IPCC emission scenarios (\nameref{S1_fig}).
+
+% Likewise, the social model we use is widespread and, despite its simplicity, captures the salient aspects of social dynamics \cite{helbing10,innes13,henderson16}.
+
+\subsubsection*{Behaviour dynamics} Individuals in our model are either `mitigators\DIFdelbegin \DIFdel{’ }\DIFdelend \DIFaddbegin \DIFadd{? }\DIFaddend or `non-mitigators\DIFdelbegin \DIFdel{’ }\DIFdelend \DIFaddbegin \DIFadd{? }\DIFaddend and they learn these behaviours from others at a specified social learning rate. They switch to the more attractive behaviour according to a utility function governed by the costs of climate change mitigation (such as the cost of installing solar panels or buying gas-electric hybrid vehicles), the costs imposed on non-mitigative behaviour (such as a carbon tax), the costs associated with the average global temperature anomaly, and the utility associated with social norms that reinforce the majority behaviour, whether it be mitigation or non-mitigation. Social norms strengthen as the majority behaviour becomes more prevalent, consistent with empirical studies\cite{bollinger12,nolan08}. Formally, the utility of being a mitigator is taken as
+\begin{equation}
+e_M = -\alpha + c \tilde{f}(T_f) +  \delta x
+\end{equation}
+where $\alpha$ is the cost of adopting mitigative strategies, $c$ is a proportionality constant that regulates the extent to which climate change costs influence incentive to mitigate, $\tilde{f}(T)$ is the cost associated with with a temperature anomaly of $T$ degrees Celsius, $T_f$ is a projected temperature anomaly (see below), $\delta$ is the strength of social norms and $x$ is the proportion of mitigators in the population. The utility of being a non-mitigator is taken as
+\begin{equation}
+e_N = -\gamma -\tilde{f}(T_f) + \delta(1-x),
+\end{equation}
+where $\gamma$ is the cost of non-mitigative behaviour, representing for example a carbon tax. Note that the utility due to social norms here is instead weighted by the proportion of non-mitigators, $1-x$.
+
+Social learning is implemented as follows. Each individual samples other members of the population at a fixed rate $\kappa$. If `individual A' samples `individual B' and B's strategy has a higher payoff that of A, then A will switch to B\DIFdelbegin \DIFdel{’}\DIFdelend \DIFaddbegin \DIFadd{?}\DIFaddend s strategy with a probability proportional to the difference in payoffs. Thus if there are $x$ mitigators in the population, the rate at which a non-mitigator encounters a mitigator is $\kappa x$. Should there be a utility gain in switching ($e_M>e_N$), the non-mitigator will switch their strategy with a probability proportional to the payoff difference, $e_M-e_N$. Since there are a total of $1-x$ non-mitigators in the population, the total rate at which non-mitigators switch to being mitigators is
+\begin{equation}
+r_{N\to M} = \kappa x(1-x) \max \{e_M-e_N,0 \}.
+\end{equation}
+Using similar arguments, one can show
+\begin{equation}
+r_{M\to N} = \kappa x(1-x) \max \{e_N-e_M,0 \}
+\end{equation}
+and so the net rate of change in mitigators is
+\begin{equation}
+\frac{dx}{dt} = r_{N\to M} - r_{M \to N} = \kappa x(1-x)(e_M-e_N),
+\end{equation}
+which has an equivalent form to the replicator equations of evolutionary game theory \cite{hofbauer98}. Writing the payoff functions explicitly gives
+\begin{equation}
+\frac{dx}{dt} = \kappa x (1-x) \big[ \gamma-\alpha + (c+1)\tilde{f}(T_f) + \delta(2x-1)\big],
+\end{equation}
+which can be reduced to
+\begin{equation}
+\label{eq:model_x}
+\frac{dx}{dt} = \kappa x (1-x) \big[ -\beta + f(T_f) + \delta(2x-1)\big],
+\end{equation}
+by introducing the new parameter $\beta = \alpha-\gamma$ (the net cost to mitigate) scaled function $f(T) = (c+1)\tilde{f}(T)$ (the net temperature associated gain to mitigate).
+
+
+% temperature projection
+\subsubsection*{Temperature projection} Because long-term climate forecasts are known to influence individual decisions on whether to support mitigation\cite{weber10}, the utility function assumes that individuals base decisions on long-term extrapolations of recently experienced climate trends. The projected temperature takes the form
+\begin{equation}
+T_f(t) = T(t) + \left(\frac{t_f}{t_p}\right) (T(t)-T(t-t_p)) 
+\end{equation}
+where $t_p$ is the number of years back to extrapolate from and $t_f$ is the number of years forward to extrapolate to.
+
+% perceived costs
+\subsubsection*{Perceived costs associated with climate change} 
+We assume that the costs associated with climate change have a sigmoidal relationship with the global temperature anomaly. This is motivated by the slow mitigative response to global warming over the past decade (\nameref{S8_fig} - \nameref{S10_fig}) and the anticipated non-linear alterations in the Earth system with increasing temperature\cite{lenton08}. Specifically
+\begin{equation}
+\tilde{f}(T) =\frac{\tilde{f}_{\text{max}}}{1+e^{-\omega(T-T_c)}},
+\end{equation}
+where $\tilde{f}_{\text{max}}$ corresponds to a maximum cost, $\omega$ is the degree of nonlinearity of the sigmoid, and $T_c$ is the critical temperature about which costs are most sensitive to change (\nameref{S5_fig}). We combine $c$ and $\tilde{f}_{\text{max}}$ into the single parameter
+\begin{equation}
+    f_{\text{max}} =   (c+1)\tilde{f}_{\text{max}},
+\end{equation}
+which yields the functional form
+\begin{equation}
+    f(T) = \frac{{f}_{\text{max}}}{1+e^{-\omega(T-T_c)}},
+\end{equation}
+as used in $\eqref{eq:model_x}$.
+
+% Earth System Model
+\subsubsection*{Earth system model} We couple the social model to an Earth system model\cite{lenton00} with reduced ocean dynamics\cite{muryshev15}. Dynamics for atmospheric $\text{CO}_2$ is modified to include an anthropogenic emission term, dependent on the proportion of non-mitigators. Specifically
+\begin{equation}
+\frac{dC_{\text{at}}}{dt} = \epsilon(t)(1-x) -P + R_{\text{veg}} + R_{\text{so}} - F_{\text{oc}} \label{eq:model_cat}
+\end{equation}
+where $C_{\text{at}}$ is the deviation in atmospheric $\text{CO}_2$ from pre-industrial values, $\epsilon(t)$ is the baseline rate of $\text{CO}_2$ emissions in the absence of mitigation, $P$ is the rate of carbon uptake via photosynthesis, $R_{veg}$ is the outward carbon flux via plant respiration, $R_{so}$ is the outward carbon flux via soil respiration and $F_{oc}$ is the net uptake of carbon by the oceans. Functional forms for the transfer of carbon via these processes are provided in \DIFdelbegin \DIFdel{Supplementary Information}\DIFdelend \DIFaddbegin \DIFadd{S1 Text}\DIFaddend . Global surface temperature is assumed to evolve with the carbon cycle according to \cite{lenton00}
+\begin{equation}
+c\frac{dT}{dt}  = (F_d - \sigma T^4)a_E \label{eq:model_t}
+\end{equation}
+where $T$ is the deviation in global surface temperature from pre-industrial values, $c$ is the thermal capacity specific heat capacity of the Earth's surface, $F_d$ is the net downward flux of radiation absorbed at the planet's surface (which depends on the opacity of $\text{CO}_2$), $\sigma$ is the Stefan-Boltzmann constant, and $a_E$ is the Earth's surface area. Full details are provided in \nameref{S1_text}.
+
+%---------Simulation----------------%
+\subsection*{Simulation} Over the period from 1800 to 2014, the socio-climate model is simulated with a fixed social component, forced with historical anthropogenic carbon emissions. Initial conditions for all climate variables are zero since they represent deviations from pre-industrial values. Social dynamics are initiated in 2014 with an initial proportion of mitigators $x_0=0.05$. The ensuing dynamics of $\epsilon(t)$ follow an increasing but saturating trend corresponding to the world's increasing but saturating population size and energy demands. Specifically
+\begin{equation}
+\epsilon(t) = 
+\begin{cases}
+\text{linear interpolation of historical emissions} & t\leq 2014 \\[5pt]
+\epsilon_{2014} + \frac{(t-2014)\epsilon_{\text{max}}}{t-2014+s} & t \geq 2014
+\end{cases}
+\end{equation}
+where $\epsilon_{\text{max}}$ is the saturating value, and $s$ the half-saturation constant, of $\epsilon(t)$. This expression is shown graphically in \DIFdelbegin %DIFDELCMD < \nameref{S5_fig}%%%
+\DIFdelend \DIFaddbegin \nameref{S7_fig}\DIFaddend . The system of (delay) ordinary differential equations is simulated using the NDSolve package in Wolfram Mathematica. Historical $\text{CO}_2$ emissions were obtained from the CDIAC data repository \cite{boden17}. 
+
+% Surface temperature data was obtained from the NASA GISS Surface Temperature Analysis \cite{schmidt09}. 
+% Global population data was obtained from the web publication OurWorldInData.org.
+
+
+
+
+%--------Sensitivity analysis--------%
+\subsection*{Parameters and sensitivity analysis.} Baseline climate parameters are obtained from the original Earth system model \cite{lenton00} where they were fitted to obtain historical trends of temperature and carbon dynamics. Social parameters are more speculative and so are given wide upper and lower bounds. The relative cost of warming ($f(T)$) with respect to the net cost of mitigation ($\beta$) is chosen in accordance with the argument that the costs of preventative action will be far less than the cost implied otherwise by global warming \cite{stern06}. For sensitivity analyses we draw parameters from triangular distributions that peak at baseline values and extend to upper and lower bounds (\nameref{S2_table}). Parameters are kept fixed preceding 2014 to retain historical trends in the simulations.
+
+
+
+
+
+%----Results-----%
+\section*{Results}
+The model demonstrates how the social learning rate can strongly determine temperature trends. We first consider a null hypothesis where adaptive behaviour is removed from the model by forcing the proportion of mitigators in the population to remain constant. In this case of fixed behaviour, emissions saturate and the temperature anomaly increases indefinitely (\nameref{S2_fig}). However, once social learning is added and the proportion of mitigators is allowed to evolve dynamically as in our baseline model, the predicted average global temperature anomaly can peak anywhere from 2.2\degree C, near the Intergovernmental Panel on Climate Change (IPCC) limit\cite{schnoor07} (in the case of very rapid social learning) to 3.5\degree C (in the more realistic case where social learning unfolds on a generational timescale) (Fig 1a-c). Whether people discuss climate change more or less often can therefore strongly influence temperature trends. 
+Because we model social norms as something that tends to reinforce majority behaviour and attitudes - whatever they might be - one might think that social norms act as a double-edged sword. In fact, they operate more like an unhelpful scimitar, as illustrated by comparing cases of low and high strength of social norms. Because the population starts off from a state of largely non-mitigating behaviour, increasing the strength of social norms suppresses the spread of mitigating behaviour for decades by entrenching non-mitigation as a norm, even when rising temperatures strongly justify an immediate shift (Fig 1d-f). (This model dynamic echoes not only current climate norms reinforcing non-mitigation \cite{stoll01} but also past social shifts occurring on decadal timescales, such as evolving social norms about when and where smoking is acceptable.) However, when mitigating behaviour eventually does become widespread, a higher strength of social norms does not significantly accelerate its spread. Rather, the two curves for cases of high and low social norm strength simply move in parallel to one another because by this time, the utility function that determines behaviour change is dominated by the large temperature anomaly (Fig 1d). In this parameter regime, social norms generate a perverse asymmetry, in contrast to findings from other socio-climate models that assume social norms can only support climate change mitigation \cite{stoll01}.
+
+%----Figure 1------%
+\begin{figure}[!ht]
+\caption{{\bf Endogenous social dynamics influence climate trajectories.}
+Shown are
+ensembles of model simulations comparing two parameter values for the social learning rate ($\kappa$) (a-c), strength of social norms ($\delta$) (d-f), and costs associated with mitigation ($\beta$)
+(g-i). All other parameters are drawn from triangular probability distributions with defined upper, lower and baseline values (\nameref{S2_table}). Displayed are median trajectories with 95\% confidence intervals from an ensemble of 100 realisations. Additional details in Methods.}
+\label{fig1}
+\end{figure}
+
+
+The model also shows how a reduction in net mitigation cost can significantly accelerate the onset of social change. For instance, a 67\% reduction in the mitigation cost increases the percentage of mitigators by 2060 from 10\% to 90\% (Fig 1g-i). Therefore, policies that reduce the cost of mitigation (through e.g. subsidies, tax cuts) will benefit from the accelerating effects of social learning and must be timed correctly. 
+
+Our baseline model assumes that individuals\DIFdelbegin \DIFdel{’ }\DIFdelend \DIFaddbegin \DIFadd{? }\DIFaddend perceived cost of climate change impacts depends on a linear extrapolation of the recent temperature anomaly over the previous ten years (Methods). If individuals instead base their decisions only on the current temperature anomaly, the simulated global temperature anomaly lies well above the 2\degree C target set by the IPCC, and exhibits wide variation in sensitivity analysis (Fig 2). This contrasts with our baseline model where the population movement towards mitigative strategies ignites earlier, significantly reducing the global temperature anomaly. This predicted dynamic stems from the multi-decadal lag between GHG emissions and the consequent global temperature rise \cite{hansen05}.
+
+%----Figure 2------%
+\begin{figure}[!ht]
+\caption{{\bf Peak temperature anomaly strongly depends on individual time horizon.}
+Box-and-whisker plot shows the peak temperature anomaly measured over 100 realisations for fixed time horizons ($t_f$) and all other parameters drawn from triangular probability distributions with defined upper, lower and baseline values (\nameref{S2_table}). Boxes span the interquartile range, whiskers span the entire set of realisations, and box dividers mark the median. Additional details in Methods.}
+\label{fig2}
+\end{figure}
+
+Our model predicts medium-term GHG emission trajectories (Figure 1b,e,h) that are qualitatively similar to those often assumed under various future emissions scenarios. This raises the question of how such models can be useful. The socio-climate model enables us to explore how socio-climate dynamics might respond to changes that are under the control of policymakers. For instance, it is possible to compare social and economic policy interventions by considering the effects of simultaneous parameter changes, instead of one at a time. This enables us to chart out the quickest pathways from highest to lowest temperature anomalies. The relative merits of increasing the social learning rate vs. reducing the net cost of mitigation are illustrated with a contour plot where the contours represent peak temperature anomaly as a function of the two parameters (Fig 3). Increasing the social learning rate (e.g. through media coverage and public fora devoted to climate change) is particularly effective when social learning is slow, but has saturating benefits, as indicated by the increasing vertical spacing of contour lines for at higher learning rates. In contrast, reducing the net mitigation cost (e.g. through tax breaks) drives a more linear response in peak temperature anomaly. Crucially, it should be noted that both a reduction of net mitigation cost and an increase in the social learning rate are required to achieve the IPCC target. The arrows in Fig 3 show the `path of steepest descent\DIFdelbegin \DIFdel{’ – }\DIFdelend \DIFaddbegin \DIFadd{? ? }\DIFaddend the most efficient combination of the two measures. Starting from a situation of high projected temperature anomalies, the model predicts that increasing the social learning rate should first be prioritised, followed by a reduction in net mitigation cost once the benefits of social learning begin to saturate. This approach gets us to the region of parameter space corresponding to the IPCC target faster than alternative trajectories.
+
+
+%----Figure 3------%
+\begin{figure}[!ht]
+\caption{{\bf Optimal pathways to mitigation via increasing social learning and reducing mitigation costs.}
+Contour plot showing peak temperature anomaly at specified values of the net cost of mitigation ($\beta$) and rate of social learning ($\kappa$). Arrows indicate the direction of steepest descent \DIFdelbeginFL \DIFdelFL{– }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{? }\DIFaddendFL the most efficient combination of the two measures to reduce temperature anomalies. All other parameters are fixed at baseline values (\nameref{S2_table}). Additional details in Methods.}
+\label{fig3}
+\end{figure}
+
+A sensitivity analysis reveals the relative influence of each parameter on the peak temperature anomaly (Fig 4). The time horizon of individuals\DIFdelbegin \DIFdel{’ }\DIFdelend \DIFaddbegin \DIFadd{? }\DIFaddend temperature projection, social learning rate and costs of mitigation are major factors, all of which may be influenced by appropriate intervention. The importance of social parameter uncertainties in determining climate predictions indicated by our model has also been predicted by other socio-climate models\cite{beckage18}. Interestingly, the system is relatively insensitive to the initial proportion of mitigators, suggesting that the mediation of social processes, as opposed to the current social state, is key to guiding the socio-climate system to a trajectory of reduced emissions. Sensitivity analyses such as these can help investigators determine priorities for data collection: the parameters exhibiting the greatest influence on predictions should be targeted for data collection so we can best reduce model uncertainty.
+
+A striking feature revealed by the sensitivity analysis is the asymmetry in many of the parameter dependencies. Consider the three parameters with highest impact on the peak temperature anomaly (concerning forecast horizon, learning rate and global warming costs). A decrease in these parameters is more detrimental than an increase is beneficial. For example, a forecast horizon 10 years \DIFdelbegin \DIFdel{over }\DIFdelend \DIFaddbegin \DIFadd{above }\DIFaddend baseline value results in a 0.6 degree decrease in peak temperature anomaly, whereas a forecast horizon 10 years below baseline value results in a 1 degree increase. This imbalance is a manifestation of the nonlinear interactions between and within each of the social and climate system.
+
+The sensitivity analysis also reveals non-monotonic relationships between the peak temperature anomaly and the parameters. For example, both an increase and a decrease in solar flux results in a higher peak temperature anomaly. Interestingly, this is not the case if the climate subsystem is considered in isolation. For a fixed emissions scenario, a higher (lower) solar flux will always result in a higher (lower) peak temperature anomaly, since the solar flux is proportional to the net downward radiation absorbed by the planet's surface. The coupling to social dynamics fundamentally alters this relationship. In the socio-climate system, a reduced solar flux results in a slower increase in surface temperature. As a consequence, individuals are less incentivised to mitigate, causing the social system to maintain a regime of non-mitigative behaviour. The accompanying high rate of $\text{CO}_2$ emissions quickly overcompensates for the reduced solar flux, yielding a higher peak temperature anomaly. Thus seemingly useful interventions to the physical system can actually end up doing more harm than good when there is strong coupling to a social system, as is the case for global warming.
+
+%----Figure 4------%
+\begin{figure}[!ht]
+\caption{{\bf Peak temperature anomaly is sensitive to both social and climate parameters.}
+Tornado plot showing the deviation in peak temperature anomaly when parameters are varied individually. A red (blue) bar indicates the deviation when the specified parameter adopts its upper (lower) bound, while all other parameters are fixed at baseline values
+(\nameref{S2_table}). Parameters ordered by relative impact from top to bottom. Additional details in Methods.}
+\label{fig4}
+\end{figure}
+
+
+\section*{Discussion}
+This study has shown how social processes can influence climate dynamics, according to one possible way of modelling social dynamics and norms. However, other frameworks for modelling human behaviour could yield different predictions.  For instance, the socio-climate model of Ref. \cite{beckage18} does not include social learning. Individuals respond directly to changes in the climate, and not through interactions with one another. As a consequence, the rate at which individuals adopt mitigative strategies only varies with the current climate situation, and not with current population consensus. Mitigation efforts can therefore be expected to closely follow the severity of climate change in the model. In our model, social learning manifests as a feedback within the social system, resulting in qualitatively different socio-climate trajectories. Mitigative behaviour is initially suppressed--even as temperatures rise to levels that should incentivise mitigation--due to low numbers of mitigating individuals and therefore little turnover of behaviour in the population. However, social learning creates a positive feedback loop once there is a net positive utility to mitigate, and so as the numbers of mitigators increases, so too does the rate at which non-mitigators switch to being mitigators. This results in a sharp non-linear increase in mitigators, as a combined outcome of both the social and the climate system dynamics. We note that, all else being equal, adding social learning to a model has the effect of slowing down behaviour change in the human population (since a process takes time, by definition), and therefore the mitigation response of human populations.
+
+
+
+
+Conversely, the case of very rapid social learning recovers a `best response' model similar to those assumed in classical economics, where individuals immediately adopt the highest payoff strategy without learning the behaviour from others.  Whether or not this assumption can approximate behaviour in real human populations hinges upon how fast social learning occurs - individuals would need to sample others rapidly enough to enable complete population behaviour change within 5 years for this approximation to work in our model, which seems implausible (Fig 1a-c).
+
+
+
+
+In a different vein, we assumed a homogeneous population with respect to mixing and individual utilities. The model's social dynamics capture interactions at the individual level, though there are many different scales of social organisation that the model does not consider, from families/neighbourhoods to cities/states and up to interacting countries. Future models could include this more hierarchical social structure. Similarly, these models could include different types of individual with correspondingly different utilities. For instance, the model could include industrial corporations with utilities biased toward shareholder profit, and social institutions (such as laws, taxes, the education system) that reflect the current governmental stance. Social learning may also take on different forms due to diverse individual psychologies and values \cite{blackmore07,collins09,ison15}. Such heterogeneities are known to affect the dynamics of a wide variety of systems \cite{durrett94} and can prevent population consensus by permitting development of echo chambers \cite{delvicario16}. Our model also makes the simplifying assumption that individuals base their temperature projection on linear extrapolation of past temperatures. This could be generalised to a non-linear extrapolation to reflect an individual's perception of `accelerating' change. Extending socio-climate models to include these finer details should prove valuable in further investigations.
+
+
+
+Climate change is a manifestation of coupled human-environment dynamics and therefore we should start coupling climate models to social models \cite{castree14,turner03}. Our simple coupled socio-climate model shows that the rate at which individuals learn socially strongly influences the peak global temperature anomaly, to the point that variation of this parameter within plausible ranges changes the peak temperature anomaly by more than 1\degree C. Therefore, it matters whether social processes cause slow or fast uptake of climate change mitigation measures. We found that social norms may not provide help when we most need it, although this finding could be nuanced by adding social heterogeneity. Finally, we illustrated how exploring the parameter space of socio-climate models suggests optimal paths for mitigating climate change. A more sophisticated policy impact assessment model based on a coupled socio-climate approach could therefore be useful to decision-makers facing a mandate to reduce GHG emissions with a fixed budget. In summary, it is essential for climate change research to account for dynamic social processes in order to generate accurate predictions of future climate trends, and the paradigm of coupled socio-climate modelling could help us address this challenge.
+
+
+
+
+
+
+% Place figure captions after the first paragraph in which they are cited.
+
+% Place tables after the first paragraph in which they are cited.
+% \begin{table}[!ht]
+% \begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+% \centering
+% \caption{
+% {\bf Table caption Nulla mi mi, venenatis sed ipsum varius, volutpat euismod diam.}}
+% \begin{tabular}{|l+l|l|l|l|l|l|l|}
+% \hline
+% \multicolumn{4}{|l|}{\bf Heading1} & \multicolumn{4}{|l|}{\bf Heading2}\\ \thickhline
+% $cell1 row1$ & cell2 row 1 & cell3 row 1 & cell4 row 1 & cell5 row 1 & cell6 row 1 & cell7 row 1 & cell8 row 1\\ \hline
+% $cell1 row2$ & cell2 row 2 & cell3 row 2 & cell4 row 2 & cell5 row 2 & cell6 row 2 & cell7 row 2 & cell8 row 2\\ \hline
+% $cell1 row3$ & cell2 row 3 & cell3 row 3 & cell4 row 3 & cell5 row 3 & cell6 row 3 & cell7 row 3 & cell8 row 3\\ \hline
+% \end{tabular}
+% \begin{flushleft} Table notes Phasellus venenatis, tortor nec vestibulum mattis, massa tortor interdum felis, nec pellentesque metus tortor nec nisl. Ut ornare mauris tellus, vel dapibus arcu suscipit sed.
+% \end{flushleft}
+% \label{table1}
+% \end{adjustwidth}
+% \end{table}
+
+
+%PLOS does not support heading levels beyond the 3rd (no 4th level headings).
+% \subsection*{\lorem\ and \ipsum\ nunc blandit a tortor}
+% \subsubsection*{3rd level heading} 
+% Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque. Quisque augue sem, tincidunt sit amet feugiat eget, ullamcorper sed velit. Sed non aliquet felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo justo ac dui pretium imperdiet. Sed suscipit iaculis mi at feugiat. 
+
+% \begin{enumerate}
+% 	\item{react}
+% 	\item{diffuse free particles}
+% 	\item{increment time by dt and go to 1}
+% \end{enumerate}
+
+
+% \subsection*{Sed ac quam id nisi malesuada congue}
+
+% Nulla mi mi, venenatis sed ipsum varius, volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis. Aliquam in enim semper, aliquam massa id, cursus neque. Praesent faucibus semper libero.
+
+% \begin{itemize}
+% 	\item First bulleted item.
+% 	\item Second bulleted item.
+% 	\item Third bulleted item.
+% \end{itemize}
+
+% \section*{Discussion}
+% Nulla mi mi, venenatis sed ipsum varius, Table~\ref{table1} volutpat euismod diam. Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at justo vitae nulla elementum commodo eu id massa. In vitae diam ac augue semper tincidunt eu ut eros. Fusce fringilla erat porttitor lectus cursus, vel sagittis arcu lobortis. Aliquam in enim semper, aliquam massa id, cursus neque. Praesent faucibus semper libero~\cite{bib3}.
+
+% \section*{Conclusion}
+
+% CO\textsubscript{2} Maecenas convallis mauris sit amet sem ultrices gravida. Etiam eget sapien nibh. Sed ac ipsum eget enim egestas ullamcorper nec euismod ligula. Curabitur fringilla pulvinar lectus consectetur pellentesque. Quisque augue sem, tincidunt sit amet feugiat eget, ullamcorper sed velit. 
+
+% Sed non aliquet felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo justo ac dui pretium imperdiet. Sed suscipit iaculis mi at feugiat. Ut neque ipsum, luctus id lacus ut, laoreet scelerisque urna. Phasellus venenatis, tortor nec vestibulum mattis, massa tortor interdum felis, nec pellentesque metus tortor nec nisl. Ut ornare mauris tellus, vel dapibus arcu suscipit sed. Nam condimentum sem eget mollis euismod. Nullam dui urna, gravida venenatis dui et, tincidunt sodales ex. Nunc est dui, sodales sed mauris nec, auctor sagittis leo. Aliquam tincidunt, ex in facilisis elementum, libero lectus luctus est, non vulputate nisl augue at dolor. For more information, see \nameref{S1_Appendix}.
+
+\section*{Supporting information}
+
+% Include only the SI item label in the paragraph heading. Use the \nameref{label} command to cite SI items in the text.
+\paragraph*{S1 Text.}
+\label{S1_text}
+{\bf Formulation of socio-climate model.} Includes full description and derivation of the socio-climate model and its parameters.
+
+\paragraph*{S1 Table.}
+\label{S1_table}
+{\bf Labels for state variables and dynamic processes in the socio-climate model.}
+
+\paragraph*{S2 Table.}
+\label{S2_table}
+{\bf Definitions and values for the parameters in the socio-climate model.}
+
+\paragraph*{S1 Fig.}
+\label{S1_fig}
+\textbf{Comparing temperature projections from the simple Earth system model with those of more complex climate models.} \textbf{a.} Ensemble of simulations from the Coupled Model Intercomparison Project Phase 5 (CMIP5) using the Representative Concentration Pathways (RCPs) as emission scenarios (figure from \DIFdelbegin \DIFdel{Knutti et al.\mbox{%DIFAUXCMD
+\cite{knutti13}}%DIFAUXCMD
+). }\DIFdelend \DIFaddbegin \DIFadd{the IPCC Fifth Assessment Report\mbox{%DIFAUXCMD
+\cite{ipcc13}}%DIFAUXCMD
+). Displayed are $95\%$ confidence intervals based on annual means. Numbers and their colour denote the number of models used for each RCP scenario. }\DIFaddend \textbf{b.} Ensemble of simulations from the simple Earth system model that we use in our socio-climate model \DIFdelbegin \DIFdel{with the same fixed emission trajectories}\DIFdelend \DIFaddbegin \DIFadd{under the same RCP emission scenarios}\DIFaddend . Parameters are drawn from triangular distributions with upper and lower bounds given in \nameref{S2_table}.
+
+\paragraph*{S2 Fig.}
+\label{S2_fig}
+\textbf{Climate trends with and without adaptation to climate change.} Removing adaptive behaviour from the model (by forcing the proportion of mitigators to remain at a constant, low value) results in saturating emissions and temperature increasing indefinitely (at least over the next two centuries). This is akin to the RCP8.5 scenario in the latest IPCC report (trajectory shown in Figure 1). Simulations above use parameter values drawn from triangular distributions with upper and lower bounds given in \nameref{S2_table}.
+
+\paragraph*{S3 Fig.}
+\label{S3_fig}
+\textbf{Worst-case scenario of the coupled socio-climate model.} Setting the social parameters to their bound that most favour non-mitigative behaviour, we get no spread of mitigative behaviour within the considered time-frame. This causes the temperature to increase in a manner similar to the RCP 8.5 scenario (\nameref{S1_fig}). Fixed parameter values are $\kappa = 0.02$, $\beta=1.5$, $\delta=1.5$, $f_{\text{max}}=4$, $x_0=0.01$. All other parameter values are drawn from triangular distributions with upper and lower bounds given in \nameref{S2_table}.
+
+\paragraph*{S4 Fig.}
+\label{S4_fig}
+\textbf{Best-case scenario of the coupled socio-climate model.} Setting the social parameters to their bound that least favour non-mitigative behaviour, we get very early spread of mitigative behaviour. This causes the temperature to evolve in a manner most similar to the RCP 2.6 scenario where temperature change stays below 2 degrees Celsius (\nameref{S1_fig}). Fixed parameter values are $\kappa = 0.2$, $\beta=0.5$, $\delta=0.5$, $f_{\text{max}}=6$, $t_f=50$. All other parameter values are drawn from triangular distributions with upper and lower bounds given in \nameref{S2_table}.
+
+\paragraph*{S5 Fig.}
+\label{S5_fig}
+\textbf{Functional form for perceived costs associated with climate change.} The incentive of individuals to mitigate is in part based on their perceived costs of climate change $f$ at some projected temperature $T$. We adopt a sigmoidal response curve for $f(T)$ with variable curvature $\omega$ and horizontal shift $T_c$ (the explicit form of $f(T)$ is provided in Methods). This form captures the expected non-linear increase in climate change impacts (cost) as temperature increases.
+
+\paragraph*{S6 Fig.}
+\label{S6_fig}
+\textbf{Estimated historical $\text{CO}_2$ emissions.} Data from the CDIAC on carbon emissions due to fossil-fuel burning and land-use changes, during the years 1800-2014. Land-use data is only available from 1850-2005 and so we linearly extrapolate (dashed line) to match the range of the fossil-fuel data. The sum of the emission trajectories is used to drive the model up to the year 2014, from which point the behavioural component of the socio-climate model is initiated.
+
+\paragraph*{S7 Fig.}
+\label{S7_fig}
+\textbf{Emissions in the absence of behavioural change.} In the socio-climate model, the factor $\epsilon(t)$ corresponds to the global $\text{CO}_2$ emissions should there be no change in human behaviour. Preceding 2014, $\epsilon(t)$ takes the historical emission trajectory (solid line) as human behaviour is not modelled here. Post 2014, $\epsilon(t)$ follows a saturating function (dashed line) to capture the saturation of global population size and energy needs. Details of this functional form can be found in the Methods section.
+
+\paragraph*{S8 Fig.}
+\label{S8_fig}
+\textbf{Comparing per capita $\text{CO}_2$ emissions with global temperature changes.} Temperature anomaly (solid line) above the 1850-1900 baseline value and $\text{CO}_2$ emissions per capita (dashed line) are shown for the 1850-2014. Data was obtained from the CDIAC data repository\cite{boden17}. It is clear that despite exceeding a 1 degree temperature anomaly, the global emissions per capita of $\text{CO}_2$ show no obvious signs of decreasing. The current temperature anomaly is not yet high enough to spark a global decrease in emissions.
+
+\paragraph*{S9 Fig.}
+\label{S9_fig}
+\textbf{$\text{CO}_2$ emissions by country.} Total industrial CO2 emissions from the ten countries with the greatest cumulative output. Data was obtained from the CDIAC data repository\cite{boden17}. Note the termination of the green curve marks the dissolution of the Soviet Union and the beginning of the yellow curve marks the formation of the Russian Federation.
+
+\paragraph*{S10 Fig.}
+\label{S10_fig}
+\textbf{$\text{CO}_2$ emissions per capita by country.} Total industrial  $\text{CO}_2$ emissions per capita from the ten countries with the greatest cumulative output. Data was obtained from the CDIAC data repository\cite{boden17}. From 1950-1980 we observe strong increases in emissions per capita among most of these countries as is seen globally in \nameref{S8_fig}. Many of the countries peak in 1980 and follow slight downwards trends demonstrating a degree of country-level movement towards mitigation. Globally, this is not the case, however.
+
+
+
+
+
+\nolinenumbers
+
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% or
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here. See http://journals.plos.org/plosone/s/latex for 
+% step-by-step instructions.
+% 
+
+
+% Import bibliography temporarily to produce .bbl file - copy and paste into document.
+\bibliography{biblio}
+
+\end{document}
+
